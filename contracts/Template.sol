@@ -63,8 +63,8 @@ contract Template is TemplateBase {
         tokenFactory = new MiniMeTokenFactory();
     }
 
-    function createToken(string _name, uint8 decimals, string _symbol, bool _transferable) public {
-      MiniMeToken token = tokenFactory.createCloneToken(MiniMeToken(0), 0, _name, decimals, _symbol, _transferable);
+    function createToken(string _name, uint8 _decimals, string _symbol, bool _transferable) public {
+      MiniMeToken token = tokenFactory.createCloneToken(MiniMeToken(0), 0, _name, _decimals, _symbol, _transferable);
       _cacheToken(token, msg.sender);
     }
 
