@@ -65,14 +65,14 @@
     "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
     "exportedSymbols": {
       "EVMScriptRegistryFactory": [
-        8840
+        8908
       ]
     },
-    "id": 8841,
+    "id": 8909,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8735,
+        "id": 8803,
         "literals": [
           "solidity",
           "0.4",
@@ -84,10 +84,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/IEVMScriptExecutor.sol",
         "file": "../evmscript/IEVMScriptExecutor.sol",
-        "id": 8736,
+        "id": 8804,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 8138,
+        "scope": 8909,
+        "sourceUnit": 8206,
         "src": "25:45:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -95,10 +95,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/EVMScriptRegistry.sol",
         "file": "../evmscript/EVMScriptRegistry.sol",
-        "id": 8737,
+        "id": 8805,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 7952,
+        "scope": 8909,
+        "sourceUnit": 8020,
         "src": "71:44:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -106,10 +106,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/executors/CallsScript.sol",
         "file": "../evmscript/executors/CallsScript.sol",
-        "id": 8738,
+        "id": 8806,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 8421,
+        "scope": 8909,
+        "sourceUnit": 8489,
         "src": "117:48:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -117,10 +117,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/Kernel.sol",
         "file": "../kernel/Kernel.sol",
-        "id": 8739,
+        "id": 8807,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 9387,
+        "scope": 8909,
+        "sourceUnit": 9455,
         "src": "167:30:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -128,10 +128,10 @@
       {
         "absolutePath": "@aragon/os/contracts/acl/ACL.sol",
         "file": "../acl/ACL.sol",
-        "id": 8740,
+        "id": 8808,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 5447,
+        "scope": 8909,
+        "sourceUnit": 5515,
         "src": "198:24:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -142,59 +142,59 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 8741,
+              "id": 8809,
               "name": "EVMScriptRegistryConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8144,
+              "referencedDeclaration": 8212,
               "src": "262:26:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8144",
+                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8212",
                 "typeString": "contract EVMScriptRegistryConstants"
               }
             },
-            "id": 8742,
+            "id": 8810,
             "nodeType": "InheritanceSpecifier",
             "src": "262:26:44"
           }
         ],
         "contractDependencies": [
-          7951,
-          8144,
-          8420
+          8019,
+          8212,
+          8488
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8840,
+        "id": 8908,
         "linearizedBaseContracts": [
-          8840,
-          8144
+          8908,
+          8212
         ],
         "name": "EVMScriptRegistryFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 8744,
+            "id": 8812,
             "name": "baseReg",
             "nodeType": "VariableDeclaration",
-            "scope": 8840,
+            "scope": 8908,
             "src": "295:32:44",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
               "typeString": "contract EVMScriptRegistry"
             },
             "typeName": {
               "contractScope": null,
-              "id": 8743,
+              "id": 8811,
               "name": "EVMScriptRegistry",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7951,
+              "referencedDeclaration": 8019,
               "src": "295:17:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                 "typeString": "contract EVMScriptRegistry"
               }
             },
@@ -203,26 +203,26 @@
           },
           {
             "constant": false,
-            "id": 8746,
+            "id": 8814,
             "name": "baseCallScript",
             "nodeType": "VariableDeclaration",
-            "scope": 8840,
+            "scope": 8908,
             "src": "333:40:44",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
               "typeString": "contract IEVMScriptExecutor"
             },
             "typeName": {
               "contractScope": null,
-              "id": 8745,
+              "id": 8813,
               "name": "IEVMScriptExecutor",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8137,
+              "referencedDeclaration": 8205,
               "src": "333:18:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                 "typeString": "contract IEVMScriptExecutor"
               }
             },
@@ -231,28 +231,28 @@
           },
           {
             "body": {
-              "id": 8763,
+              "id": 8831,
               "nodeType": "Block",
               "src": "469:114:44",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8753,
+                    "id": 8821,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8749,
+                      "id": 8817,
                       "name": "baseReg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8744,
+                      "referencedDeclaration": 8812,
                       "src": "479:7:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
@@ -263,7 +263,7 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 8751,
+                        "id": 8819,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -271,23 +271,23 @@
                         "nodeType": "NewExpression",
                         "src": "489:21:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_EVMScriptRegistry_$7951_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_EVMScriptRegistry_$8019_$",
                           "typeString": "function () returns (contract EVMScriptRegistry)"
                         },
                         "typeName": {
                           "contractScope": null,
-                          "id": 8750,
+                          "id": 8818,
                           "name": "EVMScriptRegistry",
                           "nodeType": "UserDefinedTypeName",
-                          "referencedDeclaration": 7951,
+                          "referencedDeclaration": 8019,
                           "src": "493:17:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                            "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                             "typeString": "contract EVMScriptRegistry"
                           }
                         }
                       },
-                      "id": 8752,
+                      "id": 8820,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -297,38 +297,38 @@
                       "nodeType": "FunctionCall",
                       "src": "489:23:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
                     "src": "479:33:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
-                  "id": 8754,
+                  "id": 8822,
                   "nodeType": "ExpressionStatement",
                   "src": "479:33:44"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8761,
+                    "id": 8829,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8755,
+                      "id": 8823,
                       "name": "baseCallScript",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8746,
+                      "referencedDeclaration": 8814,
                       "src": "522:14:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                         "typeString": "contract IEVMScriptExecutor"
                       }
                     },
@@ -342,7 +342,7 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 8758,
+                            "id": 8826,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -350,23 +350,23 @@
                             "nodeType": "NewExpression",
                             "src": "558:15:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_CallsScript_$8420_$",
+                              "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_CallsScript_$8488_$",
                               "typeString": "function () returns (contract CallsScript)"
                             },
                             "typeName": {
                               "contractScope": null,
-                              "id": 8757,
+                              "id": 8825,
                               "name": "CallsScript",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 8420,
+                              "referencedDeclaration": 8488,
                               "src": "562:11:44",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_CallsScript_$8420",
+                                "typeIdentifier": "t_contract$_CallsScript_$8488",
                                 "typeString": "contract CallsScript"
                               }
                             }
                           },
-                          "id": 8759,
+                          "id": 8827,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -376,7 +376,7 @@
                           "nodeType": "FunctionCall",
                           "src": "558:17:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_CallsScript_$8420",
+                            "typeIdentifier": "t_contract$_CallsScript_$8488",
                             "typeString": "contract CallsScript"
                           }
                         }
@@ -384,22 +384,22 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_CallsScript_$8420",
+                            "typeIdentifier": "t_contract$_CallsScript_$8488",
                             "typeString": "contract CallsScript"
                           }
                         ],
-                        "id": 8756,
+                        "id": 8824,
                         "name": "IEVMScriptExecutor",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8137,
+                        "referencedDeclaration": 8205,
                         "src": "539:18:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8137_$",
+                          "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8205_$",
                           "typeString": "type(contract IEVMScriptExecutor)"
                         }
                       },
-                      "id": 8760,
+                      "id": 8828,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -409,24 +409,24 @@
                       "nodeType": "FunctionCall",
                       "src": "539:37:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                         "typeString": "contract IEVMScriptExecutor"
                       }
                     },
                     "src": "522:54:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
-                  "id": 8762,
+                  "id": 8830,
                   "nodeType": "ExpressionStatement",
                   "src": "522:54:44"
                 }
               ]
             },
             "documentation": "@notice Create a new EVMScriptRegistryFactory.",
-            "id": 8764,
+            "id": 8832,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -434,19 +434,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8747,
+              "id": 8815,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "459:2:44"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8748,
+              "id": 8816,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "469:0:44"
             },
-            "scope": 8840,
+            "scope": 8908,
             "src": "448:135:44",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -454,21 +454,21 @@
           },
           {
             "body": {
-              "id": 8838,
+              "id": 8906,
               "nodeType": "Block",
               "src": "829:609:44",
               "statements": [
                 {
                   "assignments": [
-                    8772
+                    8840
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8772,
+                      "id": 8840,
                       "name": "initPayload",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8839,
+                      "scope": 8907,
                       "src": "839:24:44",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -477,7 +477,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 8771,
+                        "id": 8839,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "839:5:44",
@@ -490,7 +490,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8779,
+                  "id": 8847,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -500,32 +500,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8775,
+                            "id": 8843,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "889:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8776,
+                          "id": 8844,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "initialize",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7805,
+                          "referencedDeclaration": 7873,
                           "src": "889:14:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
                             "typeString": "function () external"
                           }
                         },
-                        "id": 8777,
+                        "id": 8845,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -549,18 +549,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8773,
+                        "id": 8841,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10590,
+                        "referencedDeclaration": 10658,
                         "src": "866:3:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
                         }
                       },
-                      "id": 8774,
+                      "id": 8842,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -574,7 +574,7 @@
                         "typeString": "function (bytes4) pure returns (bytes memory)"
                       }
                     },
-                    "id": 8778,
+                    "id": 8846,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -594,21 +594,21 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8790,
+                    "id": 8858,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8780,
+                      "id": 8848,
                       "name": "reg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8769,
+                      "referencedDeclaration": 8837,
                       "src": "923:3:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
@@ -622,11 +622,11 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 8784,
+                              "id": 8852,
                               "name": "EVMSCRIPT_REGISTRY_APP_ID",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8143,
+                              "referencedDeclaration": 8211,
                               "src": "973:25:44",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes32",
@@ -635,24 +635,24 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 8785,
+                              "id": 8853,
                               "name": "baseReg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8744,
+                              "referencedDeclaration": 8812,
                               "src": "1000:7:44",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                                 "typeString": "contract EVMScriptRegistry"
                               }
                             },
                             {
                               "argumentTypes": null,
-                              "id": 8786,
+                              "id": 8854,
                               "name": "initPayload",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8772,
+                              "referencedDeclaration": 8840,
                               "src": "1009:11:44",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
@@ -662,7 +662,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "74727565",
-                              "id": 8787,
+                              "id": 8855,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -685,7 +685,7 @@
                                 "typeString": "bytes32"
                               },
                               {
-                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                                 "typeString": "contract EVMScriptRegistry"
                               },
                               {
@@ -699,32 +699,32 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 8782,
+                              "id": 8850,
                               "name": "_dao",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8766,
+                              "referencedDeclaration": 8834,
                               "src": "947:4:44",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Kernel_$9386",
+                                "typeIdentifier": "t_contract$_Kernel_$9454",
                                 "typeString": "contract Kernel"
                               }
                             },
-                            "id": 8783,
+                            "id": 8851,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "newPinnedAppInstance",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 9135,
+                            "referencedDeclaration": 9203,
                             "src": "947:25:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$_t_bytes_memory_ptr_$_t_bool_$returns$_t_contract$_ERCProxy_$10519_$",
+                              "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$_t_bytes_memory_ptr_$_t_bool_$returns$_t_contract$_ERCProxy_$10587_$",
                               "typeString": "function (bytes32,address,bytes memory,bool) external returns (contract ERCProxy)"
                             }
                           },
-                          "id": 8788,
+                          "id": 8856,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -734,7 +734,7 @@
                           "nodeType": "FunctionCall",
                           "src": "947:80:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ERCProxy_$10519",
+                            "typeIdentifier": "t_contract$_ERCProxy_$10587",
                             "typeString": "contract ERCProxy"
                           }
                         }
@@ -742,22 +742,22 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_ERCProxy_$10519",
+                            "typeIdentifier": "t_contract$_ERCProxy_$10587",
                             "typeString": "contract ERCProxy"
                           }
                         ],
-                        "id": 8781,
+                        "id": 8849,
                         "name": "EVMScriptRegistry",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7951,
+                        "referencedDeclaration": 8019,
                         "src": "929:17:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_EVMScriptRegistry_$7951_$",
+                          "typeIdentifier": "t_type$_t_contract$_EVMScriptRegistry_$8019_$",
                           "typeString": "type(contract EVMScriptRegistry)"
                         }
                       },
-                      "id": 8789,
+                      "id": 8857,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -767,47 +767,47 @@
                       "nodeType": "FunctionCall",
                       "src": "929:99:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
                     "src": "923:105:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
-                  "id": 8791,
+                  "id": 8859,
                   "nodeType": "ExpressionStatement",
                   "src": "923:105:44"
                 },
                 {
                   "assignments": [
-                    8793
+                    8861
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8793,
+                      "id": 8861,
                       "name": "acl",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8839,
+                      "scope": 8907,
                       "src": "1039:7:44",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ACL_$5446",
+                        "typeIdentifier": "t_contract$_ACL_$5514",
                         "typeString": "contract ACL"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 8792,
+                        "id": 8860,
                         "name": "ACL",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5446,
+                        "referencedDeclaration": 5514,
                         "src": "1039:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
@@ -815,7 +815,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8799,
+                  "id": 8867,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -826,32 +826,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8795,
+                            "id": 8863,
                             "name": "_dao",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8766,
+                            "referencedDeclaration": 8834,
                             "src": "1053:4:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Kernel_$9386",
+                              "typeIdentifier": "t_contract$_Kernel_$9454",
                               "typeString": "contract Kernel"
                             }
                           },
-                          "id": 8796,
+                          "id": 8864,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "acl",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 9256,
+                          "referencedDeclaration": 9324,
                           "src": "1053:8:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IACL_$5967_$",
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IACL_$6035_$",
                             "typeString": "function () view external returns (contract IACL)"
                           }
                         },
-                        "id": 8797,
+                        "id": 8865,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -861,7 +861,7 @@
                         "nodeType": "FunctionCall",
                         "src": "1053:10:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IACL_$5967",
+                          "typeIdentifier": "t_contract$_IACL_$6035",
                           "typeString": "contract IACL"
                         }
                       }
@@ -869,22 +869,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IACL_$5967",
+                          "typeIdentifier": "t_contract$_IACL_$6035",
                           "typeString": "contract IACL"
                         }
                       ],
-                      "id": 8794,
+                      "id": 8862,
                       "name": "ACL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5446,
+                      "referencedDeclaration": 5514,
                       "src": "1049:3:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ACL_$5446_$",
+                        "typeIdentifier": "t_type$_t_contract$_ACL_$5514_$",
                         "typeString": "type(contract ACL)"
                       }
                     },
-                    "id": 8798,
+                    "id": 8866,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -894,7 +894,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1049:15:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ACL_$5446",
+                      "typeIdentifier": "t_contract$_ACL_$5514",
                       "typeString": "contract ACL"
                     }
                   },
@@ -907,27 +907,27 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8803,
+                        "id": 8871,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10704,
+                        "referencedDeclaration": 10772,
                         "src": "1096:4:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8804,
+                        "id": 8872,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1102:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
@@ -938,32 +938,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8805,
+                            "id": 8873,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "1107:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8806,
+                          "id": 8874,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "REGISTRY_ADD_EXECUTOR_ROLE",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7734,
+                          "referencedDeclaration": 7802,
                           "src": "1107:30:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_bytes32_$",
                             "typeString": "function () view external returns (bytes32)"
                           }
                         },
-                        "id": 8807,
+                        "id": 8875,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -979,14 +979,14 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8808,
+                        "id": 8876,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10704,
+                        "referencedDeclaration": 10772,
                         "src": "1141:4:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       }
@@ -994,11 +994,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         },
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         },
                         {
@@ -1006,38 +1006,38 @@
                           "typeString": "bytes32"
                         },
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8800,
+                        "id": 8868,
                         "name": "acl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8793,
+                        "referencedDeclaration": 8861,
                         "src": "1075:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
-                      "id": 8802,
+                      "id": 8870,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "createPermission",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4372,
+                      "referencedDeclaration": 4440,
                       "src": "1075:20:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (address,address,bytes32,address) external"
                       }
                     },
-                    "id": 8809,
+                    "id": 8877,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1051,7 +1051,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8810,
+                  "id": 8878,
                   "nodeType": "ExpressionStatement",
                   "src": "1075:71:44"
                 },
@@ -1061,14 +1061,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8814,
+                        "id": 8882,
                         "name": "baseCallScript",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8746,
+                        "referencedDeclaration": 8814,
                         "src": "1179:14:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       }
@@ -1076,38 +1076,38 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8811,
+                        "id": 8879,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1157:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
-                      "id": 8813,
+                      "id": 8881,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "addScriptExecutor",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7837,
+                      "referencedDeclaration": 7905,
                       "src": "1157:21:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IEVMScriptExecutor_$8137_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IEVMScriptExecutor_$8205_$returns$_t_uint256_$",
                         "typeString": "function (contract IEVMScriptExecutor) external returns (uint256)"
                       }
                     },
-                    "id": 8815,
+                    "id": 8883,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1121,7 +1121,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 8816,
+                  "id": 8884,
                   "nodeType": "ExpressionStatement",
                   "src": "1157:37:44"
                 },
@@ -1131,27 +1131,27 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8820,
+                        "id": 8888,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10704,
+                        "referencedDeclaration": 10772,
                         "src": "1290:4:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8821,
+                        "id": 8889,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1296:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
@@ -1162,32 +1162,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8822,
+                            "id": 8890,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "1301:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8823,
+                          "id": 8891,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "REGISTRY_ADD_EXECUTOR_ROLE",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7734,
+                          "referencedDeclaration": 7802,
                           "src": "1301:30:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_bytes32_$",
                             "typeString": "function () view external returns (bytes32)"
                           }
                         },
-                        "id": 8824,
+                        "id": 8892,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1205,11 +1205,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         },
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         },
                         {
@@ -1219,32 +1219,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8817,
+                        "id": 8885,
                         "name": "acl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8793,
+                        "referencedDeclaration": 8861,
                         "src": "1269:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
-                      "id": 8819,
+                      "id": 8887,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "revokePermission",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4450,
+                      "referencedDeclaration": 4518,
                       "src": "1269:20:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,address,bytes32) external"
                       }
                     },
-                    "id": 8825,
+                    "id": 8893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1258,7 +1258,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8826,
+                  "id": 8894,
                   "nodeType": "ExpressionStatement",
                   "src": "1269:65:44"
                 },
@@ -1268,14 +1268,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8830,
+                        "id": 8898,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1372:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
@@ -1286,32 +1286,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8831,
+                            "id": 8899,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "1377:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8832,
+                          "id": 8900,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "REGISTRY_ADD_EXECUTOR_ROLE",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7734,
+                          "referencedDeclaration": 7802,
                           "src": "1377:30:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_bytes32_$",
                             "typeString": "function () view external returns (bytes32)"
                           }
                         },
-                        "id": 8833,
+                        "id": 8901,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1329,7 +1329,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         },
                         {
@@ -1339,32 +1339,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8827,
+                        "id": 8895,
                         "name": "acl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8793,
+                        "referencedDeclaration": 8861,
                         "src": "1344:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
-                      "id": 8829,
+                      "id": 8897,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "removePermissionManager",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4490,
+                      "referencedDeclaration": 4558,
                       "src": "1344:27:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,bytes32) external"
                       }
                     },
-                    "id": 8834,
+                    "id": 8902,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1378,33 +1378,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8835,
+                  "id": 8903,
                   "nodeType": "ExpressionStatement",
                   "src": "1344:66:44"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8836,
+                    "id": 8904,
                     "name": "reg",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8769,
+                    "referencedDeclaration": 8837,
                     "src": "1428:3:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
-                  "functionReturnParameters": 8770,
-                  "id": 8837,
+                  "functionReturnParameters": 8838,
+                  "id": 8905,
                   "nodeType": "Return",
                   "src": "1421:10:44"
                 }
               ]
             },
             "documentation": "@notice Install a new pinned instance of EVMScriptRegistry on `_dao`.\n@param _dao Kernel\n@return Installed EVMScriptRegistry",
-            "id": 8839,
+            "id": 8907,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1412,31 +1412,31 @@
             "name": "newEVMScriptRegistry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8767,
+              "id": 8835,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8766,
+                  "id": 8834,
                   "name": "_dao",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8839,
+                  "scope": 8907,
                   "src": "777:11:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Kernel_$9386",
+                    "typeIdentifier": "t_contract$_Kernel_$9454",
                     "typeString": "contract Kernel"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8765,
+                    "id": 8833,
                     "name": "Kernel",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 9386,
+                    "referencedDeclaration": 9454,
                     "src": "777:6:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Kernel_$9386",
+                      "typeIdentifier": "t_contract$_Kernel_$9454",
                       "typeString": "contract Kernel"
                     }
                   },
@@ -1448,31 +1448,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8770,
+              "id": 8838,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8769,
+                  "id": 8837,
                   "name": "reg",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8839,
+                  "scope": 8907,
                   "src": "806:21:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                    "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                     "typeString": "contract EVMScriptRegistry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8768,
+                    "id": 8836,
                     "name": "EVMScriptRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7951,
+                    "referencedDeclaration": 8019,
                     "src": "806:17:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
@@ -1482,14 +1482,14 @@
               ],
               "src": "805:23:44"
             },
-            "scope": 8840,
+            "scope": 8908,
             "src": "747:691:44",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 8841,
+        "scope": 8909,
         "src": "225:1215:44"
       }
     ],
@@ -1499,14 +1499,14 @@
     "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
     "exportedSymbols": {
       "EVMScriptRegistryFactory": [
-        8840
+        8908
       ]
     },
-    "id": 8841,
+    "id": 8909,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8735,
+        "id": 8803,
         "literals": [
           "solidity",
           "0.4",
@@ -1518,10 +1518,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/IEVMScriptExecutor.sol",
         "file": "../evmscript/IEVMScriptExecutor.sol",
-        "id": 8736,
+        "id": 8804,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 8138,
+        "scope": 8909,
+        "sourceUnit": 8206,
         "src": "25:45:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1529,10 +1529,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/EVMScriptRegistry.sol",
         "file": "../evmscript/EVMScriptRegistry.sol",
-        "id": 8737,
+        "id": 8805,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 7952,
+        "scope": 8909,
+        "sourceUnit": 8020,
         "src": "71:44:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1540,10 +1540,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/executors/CallsScript.sol",
         "file": "../evmscript/executors/CallsScript.sol",
-        "id": 8738,
+        "id": 8806,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 8421,
+        "scope": 8909,
+        "sourceUnit": 8489,
         "src": "117:48:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1551,10 +1551,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/Kernel.sol",
         "file": "../kernel/Kernel.sol",
-        "id": 8739,
+        "id": 8807,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 9387,
+        "scope": 8909,
+        "sourceUnit": 9455,
         "src": "167:30:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1562,10 +1562,10 @@
       {
         "absolutePath": "@aragon/os/contracts/acl/ACL.sol",
         "file": "../acl/ACL.sol",
-        "id": 8740,
+        "id": 8808,
         "nodeType": "ImportDirective",
-        "scope": 8841,
-        "sourceUnit": 5447,
+        "scope": 8909,
+        "sourceUnit": 5515,
         "src": "198:24:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1576,59 +1576,59 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 8741,
+              "id": 8809,
               "name": "EVMScriptRegistryConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8144,
+              "referencedDeclaration": 8212,
               "src": "262:26:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8144",
+                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8212",
                 "typeString": "contract EVMScriptRegistryConstants"
               }
             },
-            "id": 8742,
+            "id": 8810,
             "nodeType": "InheritanceSpecifier",
             "src": "262:26:44"
           }
         ],
         "contractDependencies": [
-          7951,
-          8144,
-          8420
+          8019,
+          8212,
+          8488
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8840,
+        "id": 8908,
         "linearizedBaseContracts": [
-          8840,
-          8144
+          8908,
+          8212
         ],
         "name": "EVMScriptRegistryFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 8744,
+            "id": 8812,
             "name": "baseReg",
             "nodeType": "VariableDeclaration",
-            "scope": 8840,
+            "scope": 8908,
             "src": "295:32:44",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
               "typeString": "contract EVMScriptRegistry"
             },
             "typeName": {
               "contractScope": null,
-              "id": 8743,
+              "id": 8811,
               "name": "EVMScriptRegistry",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7951,
+              "referencedDeclaration": 8019,
               "src": "295:17:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                 "typeString": "contract EVMScriptRegistry"
               }
             },
@@ -1637,26 +1637,26 @@
           },
           {
             "constant": false,
-            "id": 8746,
+            "id": 8814,
             "name": "baseCallScript",
             "nodeType": "VariableDeclaration",
-            "scope": 8840,
+            "scope": 8908,
             "src": "333:40:44",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
               "typeString": "contract IEVMScriptExecutor"
             },
             "typeName": {
               "contractScope": null,
-              "id": 8745,
+              "id": 8813,
               "name": "IEVMScriptExecutor",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8137,
+              "referencedDeclaration": 8205,
               "src": "333:18:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                 "typeString": "contract IEVMScriptExecutor"
               }
             },
@@ -1665,28 +1665,28 @@
           },
           {
             "body": {
-              "id": 8763,
+              "id": 8831,
               "nodeType": "Block",
               "src": "469:114:44",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8753,
+                    "id": 8821,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8749,
+                      "id": 8817,
                       "name": "baseReg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8744,
+                      "referencedDeclaration": 8812,
                       "src": "479:7:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
@@ -1697,7 +1697,7 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 8751,
+                        "id": 8819,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1705,23 +1705,23 @@
                         "nodeType": "NewExpression",
                         "src": "489:21:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_EVMScriptRegistry_$7951_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_EVMScriptRegistry_$8019_$",
                           "typeString": "function () returns (contract EVMScriptRegistry)"
                         },
                         "typeName": {
                           "contractScope": null,
-                          "id": 8750,
+                          "id": 8818,
                           "name": "EVMScriptRegistry",
                           "nodeType": "UserDefinedTypeName",
-                          "referencedDeclaration": 7951,
+                          "referencedDeclaration": 8019,
                           "src": "493:17:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                            "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                             "typeString": "contract EVMScriptRegistry"
                           }
                         }
                       },
-                      "id": 8752,
+                      "id": 8820,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1731,38 +1731,38 @@
                       "nodeType": "FunctionCall",
                       "src": "489:23:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
                     "src": "479:33:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
-                  "id": 8754,
+                  "id": 8822,
                   "nodeType": "ExpressionStatement",
                   "src": "479:33:44"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8761,
+                    "id": 8829,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8755,
+                      "id": 8823,
                       "name": "baseCallScript",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8746,
+                      "referencedDeclaration": 8814,
                       "src": "522:14:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                         "typeString": "contract IEVMScriptExecutor"
                       }
                     },
@@ -1776,7 +1776,7 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 8758,
+                            "id": 8826,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1784,23 +1784,23 @@
                             "nodeType": "NewExpression",
                             "src": "558:15:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_CallsScript_$8420_$",
+                              "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_CallsScript_$8488_$",
                               "typeString": "function () returns (contract CallsScript)"
                             },
                             "typeName": {
                               "contractScope": null,
-                              "id": 8757,
+                              "id": 8825,
                               "name": "CallsScript",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 8420,
+                              "referencedDeclaration": 8488,
                               "src": "562:11:44",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_CallsScript_$8420",
+                                "typeIdentifier": "t_contract$_CallsScript_$8488",
                                 "typeString": "contract CallsScript"
                               }
                             }
                           },
-                          "id": 8759,
+                          "id": 8827,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1810,7 +1810,7 @@
                           "nodeType": "FunctionCall",
                           "src": "558:17:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_CallsScript_$8420",
+                            "typeIdentifier": "t_contract$_CallsScript_$8488",
                             "typeString": "contract CallsScript"
                           }
                         }
@@ -1818,22 +1818,22 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_CallsScript_$8420",
+                            "typeIdentifier": "t_contract$_CallsScript_$8488",
                             "typeString": "contract CallsScript"
                           }
                         ],
-                        "id": 8756,
+                        "id": 8824,
                         "name": "IEVMScriptExecutor",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8137,
+                        "referencedDeclaration": 8205,
                         "src": "539:18:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8137_$",
+                          "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8205_$",
                           "typeString": "type(contract IEVMScriptExecutor)"
                         }
                       },
-                      "id": 8760,
+                      "id": 8828,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1843,24 +1843,24 @@
                       "nodeType": "FunctionCall",
                       "src": "539:37:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                         "typeString": "contract IEVMScriptExecutor"
                       }
                     },
                     "src": "522:54:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
-                  "id": 8762,
+                  "id": 8830,
                   "nodeType": "ExpressionStatement",
                   "src": "522:54:44"
                 }
               ]
             },
             "documentation": "@notice Create a new EVMScriptRegistryFactory.",
-            "id": 8764,
+            "id": 8832,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -1868,19 +1868,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8747,
+              "id": 8815,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "459:2:44"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8748,
+              "id": 8816,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "469:0:44"
             },
-            "scope": 8840,
+            "scope": 8908,
             "src": "448:135:44",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1888,21 +1888,21 @@
           },
           {
             "body": {
-              "id": 8838,
+              "id": 8906,
               "nodeType": "Block",
               "src": "829:609:44",
               "statements": [
                 {
                   "assignments": [
-                    8772
+                    8840
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8772,
+                      "id": 8840,
                       "name": "initPayload",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8839,
+                      "scope": 8907,
                       "src": "839:24:44",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1911,7 +1911,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 8771,
+                        "id": 8839,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "839:5:44",
@@ -1924,7 +1924,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8779,
+                  "id": 8847,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -1934,32 +1934,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8775,
+                            "id": 8843,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "889:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8776,
+                          "id": 8844,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "initialize",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7805,
+                          "referencedDeclaration": 7873,
                           "src": "889:14:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
                             "typeString": "function () external"
                           }
                         },
-                        "id": 8777,
+                        "id": 8845,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1983,18 +1983,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8773,
+                        "id": 8841,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10590,
+                        "referencedDeclaration": 10658,
                         "src": "866:3:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
                         }
                       },
-                      "id": 8774,
+                      "id": 8842,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2008,7 +2008,7 @@
                         "typeString": "function (bytes4) pure returns (bytes memory)"
                       }
                     },
-                    "id": 8778,
+                    "id": 8846,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2028,21 +2028,21 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8790,
+                    "id": 8858,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8780,
+                      "id": 8848,
                       "name": "reg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8769,
+                      "referencedDeclaration": 8837,
                       "src": "923:3:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
@@ -2056,11 +2056,11 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 8784,
+                              "id": 8852,
                               "name": "EVMSCRIPT_REGISTRY_APP_ID",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8143,
+                              "referencedDeclaration": 8211,
                               "src": "973:25:44",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes32",
@@ -2069,24 +2069,24 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 8785,
+                              "id": 8853,
                               "name": "baseReg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8744,
+                              "referencedDeclaration": 8812,
                               "src": "1000:7:44",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                                 "typeString": "contract EVMScriptRegistry"
                               }
                             },
                             {
                               "argumentTypes": null,
-                              "id": 8786,
+                              "id": 8854,
                               "name": "initPayload",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8772,
+                              "referencedDeclaration": 8840,
                               "src": "1009:11:44",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
@@ -2096,7 +2096,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "74727565",
-                              "id": 8787,
+                              "id": 8855,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2119,7 +2119,7 @@
                                 "typeString": "bytes32"
                               },
                               {
-                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                                "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                                 "typeString": "contract EVMScriptRegistry"
                               },
                               {
@@ -2133,32 +2133,32 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 8782,
+                              "id": 8850,
                               "name": "_dao",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8766,
+                              "referencedDeclaration": 8834,
                               "src": "947:4:44",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Kernel_$9386",
+                                "typeIdentifier": "t_contract$_Kernel_$9454",
                                 "typeString": "contract Kernel"
                               }
                             },
-                            "id": 8783,
+                            "id": 8851,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "newPinnedAppInstance",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 9135,
+                            "referencedDeclaration": 9203,
                             "src": "947:25:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$_t_bytes_memory_ptr_$_t_bool_$returns$_t_contract$_ERCProxy_$10519_$",
+                              "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$_t_bytes_memory_ptr_$_t_bool_$returns$_t_contract$_ERCProxy_$10587_$",
                               "typeString": "function (bytes32,address,bytes memory,bool) external returns (contract ERCProxy)"
                             }
                           },
-                          "id": 8788,
+                          "id": 8856,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2168,7 +2168,7 @@
                           "nodeType": "FunctionCall",
                           "src": "947:80:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ERCProxy_$10519",
+                            "typeIdentifier": "t_contract$_ERCProxy_$10587",
                             "typeString": "contract ERCProxy"
                           }
                         }
@@ -2176,22 +2176,22 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_ERCProxy_$10519",
+                            "typeIdentifier": "t_contract$_ERCProxy_$10587",
                             "typeString": "contract ERCProxy"
                           }
                         ],
-                        "id": 8781,
+                        "id": 8849,
                         "name": "EVMScriptRegistry",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7951,
+                        "referencedDeclaration": 8019,
                         "src": "929:17:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_EVMScriptRegistry_$7951_$",
+                          "typeIdentifier": "t_type$_t_contract$_EVMScriptRegistry_$8019_$",
                           "typeString": "type(contract EVMScriptRegistry)"
                         }
                       },
-                      "id": 8789,
+                      "id": 8857,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2201,47 +2201,47 @@
                       "nodeType": "FunctionCall",
                       "src": "929:99:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                        "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                         "typeString": "contract EVMScriptRegistry"
                       }
                     },
                     "src": "923:105:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
-                  "id": 8791,
+                  "id": 8859,
                   "nodeType": "ExpressionStatement",
                   "src": "923:105:44"
                 },
                 {
                   "assignments": [
-                    8793
+                    8861
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8793,
+                      "id": 8861,
                       "name": "acl",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8839,
+                      "scope": 8907,
                       "src": "1039:7:44",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ACL_$5446",
+                        "typeIdentifier": "t_contract$_ACL_$5514",
                         "typeString": "contract ACL"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 8792,
+                        "id": 8860,
                         "name": "ACL",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 5446,
+                        "referencedDeclaration": 5514,
                         "src": "1039:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
@@ -2249,7 +2249,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8799,
+                  "id": 8867,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -2260,32 +2260,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8795,
+                            "id": 8863,
                             "name": "_dao",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8766,
+                            "referencedDeclaration": 8834,
                             "src": "1053:4:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Kernel_$9386",
+                              "typeIdentifier": "t_contract$_Kernel_$9454",
                               "typeString": "contract Kernel"
                             }
                           },
-                          "id": 8796,
+                          "id": 8864,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "acl",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 9256,
+                          "referencedDeclaration": 9324,
                           "src": "1053:8:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IACL_$5967_$",
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IACL_$6035_$",
                             "typeString": "function () view external returns (contract IACL)"
                           }
                         },
-                        "id": 8797,
+                        "id": 8865,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2295,7 +2295,7 @@
                         "nodeType": "FunctionCall",
                         "src": "1053:10:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IACL_$5967",
+                          "typeIdentifier": "t_contract$_IACL_$6035",
                           "typeString": "contract IACL"
                         }
                       }
@@ -2303,22 +2303,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IACL_$5967",
+                          "typeIdentifier": "t_contract$_IACL_$6035",
                           "typeString": "contract IACL"
                         }
                       ],
-                      "id": 8794,
+                      "id": 8862,
                       "name": "ACL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5446,
+                      "referencedDeclaration": 5514,
                       "src": "1049:3:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ACL_$5446_$",
+                        "typeIdentifier": "t_type$_t_contract$_ACL_$5514_$",
                         "typeString": "type(contract ACL)"
                       }
                     },
-                    "id": 8798,
+                    "id": 8866,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2328,7 +2328,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1049:15:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ACL_$5446",
+                      "typeIdentifier": "t_contract$_ACL_$5514",
                       "typeString": "contract ACL"
                     }
                   },
@@ -2341,27 +2341,27 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8803,
+                        "id": 8871,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10704,
+                        "referencedDeclaration": 10772,
                         "src": "1096:4:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8804,
+                        "id": 8872,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1102:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
@@ -2372,32 +2372,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8805,
+                            "id": 8873,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "1107:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8806,
+                          "id": 8874,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "REGISTRY_ADD_EXECUTOR_ROLE",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7734,
+                          "referencedDeclaration": 7802,
                           "src": "1107:30:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_bytes32_$",
                             "typeString": "function () view external returns (bytes32)"
                           }
                         },
-                        "id": 8807,
+                        "id": 8875,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2413,14 +2413,14 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8808,
+                        "id": 8876,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10704,
+                        "referencedDeclaration": 10772,
                         "src": "1141:4:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       }
@@ -2428,11 +2428,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         },
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         },
                         {
@@ -2440,38 +2440,38 @@
                           "typeString": "bytes32"
                         },
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8800,
+                        "id": 8868,
                         "name": "acl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8793,
+                        "referencedDeclaration": 8861,
                         "src": "1075:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
-                      "id": 8802,
+                      "id": 8870,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "createPermission",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4372,
+                      "referencedDeclaration": 4440,
                       "src": "1075:20:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (address,address,bytes32,address) external"
                       }
                     },
-                    "id": 8809,
+                    "id": 8877,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2485,7 +2485,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8810,
+                  "id": 8878,
                   "nodeType": "ExpressionStatement",
                   "src": "1075:71:44"
                 },
@@ -2495,14 +2495,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8814,
+                        "id": 8882,
                         "name": "baseCallScript",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8746,
+                        "referencedDeclaration": 8814,
                         "src": "1179:14:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       }
@@ -2510,38 +2510,38 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8811,
+                        "id": 8879,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1157:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
-                      "id": 8813,
+                      "id": 8881,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "addScriptExecutor",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7837,
+                      "referencedDeclaration": 7905,
                       "src": "1157:21:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IEVMScriptExecutor_$8137_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IEVMScriptExecutor_$8205_$returns$_t_uint256_$",
                         "typeString": "function (contract IEVMScriptExecutor) external returns (uint256)"
                       }
                     },
-                    "id": 8815,
+                    "id": 8883,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2555,7 +2555,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 8816,
+                  "id": 8884,
                   "nodeType": "ExpressionStatement",
                   "src": "1157:37:44"
                 },
@@ -2565,27 +2565,27 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8820,
+                        "id": 8888,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10704,
+                        "referencedDeclaration": 10772,
                         "src": "1290:4:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8821,
+                        "id": 8889,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1296:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
@@ -2596,32 +2596,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8822,
+                            "id": 8890,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "1301:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8823,
+                          "id": 8891,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "REGISTRY_ADD_EXECUTOR_ROLE",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7734,
+                          "referencedDeclaration": 7802,
                           "src": "1301:30:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_bytes32_$",
                             "typeString": "function () view external returns (bytes32)"
                           }
                         },
-                        "id": 8824,
+                        "id": 8892,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2639,11 +2639,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8840",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistryFactory_$8908",
                           "typeString": "contract EVMScriptRegistryFactory"
                         },
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         },
                         {
@@ -2653,32 +2653,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8817,
+                        "id": 8885,
                         "name": "acl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8793,
+                        "referencedDeclaration": 8861,
                         "src": "1269:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
-                      "id": 8819,
+                      "id": 8887,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "revokePermission",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4450,
+                      "referencedDeclaration": 4518,
                       "src": "1269:20:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,address,bytes32) external"
                       }
                     },
-                    "id": 8825,
+                    "id": 8893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2692,7 +2692,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8826,
+                  "id": 8894,
                   "nodeType": "ExpressionStatement",
                   "src": "1269:65:44"
                 },
@@ -2702,14 +2702,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8830,
+                        "id": 8898,
                         "name": "reg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8769,
+                        "referencedDeclaration": 8837,
                         "src": "1372:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         }
                       },
@@ -2720,32 +2720,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 8831,
+                            "id": 8899,
                             "name": "reg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8769,
+                            "referencedDeclaration": 8837,
                             "src": "1377:3:44",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                              "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                               "typeString": "contract EVMScriptRegistry"
                             }
                           },
-                          "id": 8832,
+                          "id": 8900,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "REGISTRY_ADD_EXECUTOR_ROLE",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 7734,
+                          "referencedDeclaration": 7802,
                           "src": "1377:30:44",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_bytes32_$",
                             "typeString": "function () view external returns (bytes32)"
                           }
                         },
-                        "id": 8833,
+                        "id": 8901,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2763,7 +2763,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                          "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                           "typeString": "contract EVMScriptRegistry"
                         },
                         {
@@ -2773,32 +2773,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8827,
+                        "id": 8895,
                         "name": "acl",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8793,
+                        "referencedDeclaration": 8861,
                         "src": "1344:3:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ACL_$5446",
+                          "typeIdentifier": "t_contract$_ACL_$5514",
                           "typeString": "contract ACL"
                         }
                       },
-                      "id": 8829,
+                      "id": 8897,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "removePermissionManager",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4490,
+                      "referencedDeclaration": 4558,
                       "src": "1344:27:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,bytes32) external"
                       }
                     },
-                    "id": 8834,
+                    "id": 8902,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2812,33 +2812,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8835,
+                  "id": 8903,
                   "nodeType": "ExpressionStatement",
                   "src": "1344:66:44"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8836,
+                    "id": 8904,
                     "name": "reg",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8769,
+                    "referencedDeclaration": 8837,
                     "src": "1428:3:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
-                  "functionReturnParameters": 8770,
-                  "id": 8837,
+                  "functionReturnParameters": 8838,
+                  "id": 8905,
                   "nodeType": "Return",
                   "src": "1421:10:44"
                 }
               ]
             },
             "documentation": "@notice Install a new pinned instance of EVMScriptRegistry on `_dao`.\n@param _dao Kernel\n@return Installed EVMScriptRegistry",
-            "id": 8839,
+            "id": 8907,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2846,31 +2846,31 @@
             "name": "newEVMScriptRegistry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8767,
+              "id": 8835,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8766,
+                  "id": 8834,
                   "name": "_dao",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8839,
+                  "scope": 8907,
                   "src": "777:11:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Kernel_$9386",
+                    "typeIdentifier": "t_contract$_Kernel_$9454",
                     "typeString": "contract Kernel"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8765,
+                    "id": 8833,
                     "name": "Kernel",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 9386,
+                    "referencedDeclaration": 9454,
                     "src": "777:6:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Kernel_$9386",
+                      "typeIdentifier": "t_contract$_Kernel_$9454",
                       "typeString": "contract Kernel"
                     }
                   },
@@ -2882,31 +2882,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8770,
+              "id": 8838,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8769,
+                  "id": 8837,
                   "name": "reg",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8839,
+                  "scope": 8907,
                   "src": "806:21:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                    "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                     "typeString": "contract EVMScriptRegistry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8768,
+                    "id": 8836,
                     "name": "EVMScriptRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7951,
+                    "referencedDeclaration": 8019,
                     "src": "806:17:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$7951",
+                      "typeIdentifier": "t_contract$_EVMScriptRegistry_$8019",
                       "typeString": "contract EVMScriptRegistry"
                     }
                   },
@@ -2916,14 +2916,14 @@
               ],
               "src": "805:23:44"
             },
-            "scope": 8840,
+            "scope": 8908,
             "src": "747:691:44",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 8841,
+        "scope": 8909,
         "src": "225:1215:44"
       }
     ],
@@ -2935,5 +2935,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-10-17T19:35:34.555Z"
+  "updatedAt": "2019-10-17T19:58:52.980Z"
 }

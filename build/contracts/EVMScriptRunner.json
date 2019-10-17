@@ -128,14 +128,14 @@
     "absolutePath": "@aragon/os/contracts/evmscript/EVMScriptRunner.sol",
     "exportedSymbols": {
       "EVMScriptRunner": [
-        8117
+        8185
       ]
     },
-    "id": 8118,
+    "id": 8186,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7953,
+        "id": 8021,
         "literals": [
           "solidity",
           "^",
@@ -148,10 +148,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/IEVMScriptExecutor.sol",
         "file": "./IEVMScriptExecutor.sol",
-        "id": 7954,
+        "id": 8022,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 8138,
+        "scope": 8186,
+        "sourceUnit": 8206,
         "src": "70:34:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -159,10 +159,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/IEVMScriptRegistry.sol",
         "file": "./IEVMScriptRegistry.sol",
-        "id": 7955,
+        "id": 8023,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 8165,
+        "scope": 8186,
+        "sourceUnit": 8233,
         "src": "105:34:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -170,10 +170,10 @@
       {
         "absolutePath": "@aragon/os/contracts/apps/AppStorage.sol",
         "file": "../apps/AppStorage.sol",
-        "id": 7956,
+        "id": 8024,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 6660,
+        "scope": 8186,
+        "sourceUnit": 6728,
         "src": "141:32:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -181,10 +181,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/KernelConstants.sol",
         "file": "../kernel/KernelConstants.sol",
-        "id": 7957,
+        "id": 8025,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 9409,
+        "scope": 8186,
+        "sourceUnit": 9477,
         "src": "174:39:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -192,10 +192,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/Initializable.sol",
         "file": "../common/Initializable.sol",
-        "id": 7958,
+        "id": 8026,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 7105,
+        "scope": 8186,
+        "sourceUnit": 7173,
         "src": "214:37:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -206,17 +206,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7959,
+              "id": 8027,
               "name": "AppStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6659,
+              "referencedDeclaration": 6727,
               "src": "282:10:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AppStorage_$6659",
+                "typeIdentifier": "t_contract$_AppStorage_$6727",
                 "typeString": "contract AppStorage"
               }
             },
-            "id": 7960,
+            "id": 8028,
             "nodeType": "InheritanceSpecifier",
             "src": "282:10:36"
           },
@@ -224,17 +224,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7961,
+              "id": 8029,
               "name": "Initializable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7104,
+              "referencedDeclaration": 7172,
               "src": "294:13:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Initializable_$7104",
+                "typeIdentifier": "t_contract$_Initializable_$7172",
                 "typeString": "contract Initializable"
               }
             },
-            "id": 7962,
+            "id": 8030,
             "nodeType": "InheritanceSpecifier",
             "src": "294:13:36"
           },
@@ -242,17 +242,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7963,
+              "id": 8031,
               "name": "EVMScriptRegistryConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8144,
+              "referencedDeclaration": 8212,
               "src": "309:26:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8144",
+                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8212",
                 "typeString": "contract EVMScriptRegistryConstants"
               }
             },
-            "id": 7964,
+            "id": 8032,
             "nodeType": "InheritanceSpecifier",
             "src": "309:26:36"
           },
@@ -260,49 +260,49 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7965,
+              "id": 8033,
               "name": "KernelNamespaceConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9408,
+              "referencedDeclaration": 9476,
               "src": "337:24:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$9408",
+                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$9476",
                 "typeString": "contract KernelNamespaceConstants"
               }
             },
-            "id": 7966,
+            "id": 8034,
             "nodeType": "InheritanceSpecifier",
             "src": "337:24:36"
           }
         ],
         "contractDependencies": [
-          6659,
-          7104,
-          7494,
-          8144,
-          9408
+          6727,
+          7172,
+          7562,
+          8212,
+          9476
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8117,
+        "id": 8185,
         "linearizedBaseContracts": [
-          8117,
-          9408,
-          8144,
-          7104,
-          7494,
-          6659
+          8185,
+          9476,
+          8212,
+          7172,
+          7562,
+          6727
         ],
         "name": "EVMScriptRunner",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 7969,
+            "id": 8037,
             "name": "ERROR_EXECUTOR_UNAVAILABLE",
             "nodeType": "VariableDeclaration",
-            "scope": 8117,
+            "scope": 8185,
             "src": "368:82:36",
             "stateVariable": true,
             "storageLocation": "default",
@@ -311,7 +311,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 7967,
+              "id": 8035,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "368:6:36",
@@ -323,7 +323,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "45564d52554e5f4558454355544f525f554e415641494c41424c45",
-              "id": 7968,
+              "id": 8036,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -342,10 +342,10 @@
           },
           {
             "constant": true,
-            "id": 7972,
+            "id": 8040,
             "name": "ERROR_PROTECTED_STATE_MODIFIED",
             "nodeType": "VariableDeclaration",
-            "scope": 8117,
+            "scope": 8185,
             "src": "456:90:36",
             "stateVariable": true,
             "storageLocation": "default",
@@ -354,7 +354,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 7970,
+              "id": 8038,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "456:6:36",
@@ -366,7 +366,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "45564d52554e5f50524f5445435445445f53544154455f4d4f444946494544",
-              "id": 7971,
+              "id": 8039,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -386,20 +386,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 7982,
+            "id": 8050,
             "name": "ScriptResult",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 7981,
+              "id": 8049,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7974,
+                  "id": 8042,
                   "indexed": true,
                   "name": "executor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "718:24:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -408,7 +408,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7973,
+                    "id": 8041,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "718:7:36",
@@ -422,11 +422,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7976,
+                  "id": 8044,
                   "indexed": false,
                   "name": "script",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "744:12:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -435,7 +435,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7975,
+                    "id": 8043,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "744:5:36",
@@ -449,11 +449,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7978,
+                  "id": 8046,
                   "indexed": false,
                   "name": "input",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "758:11:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -462,7 +462,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7977,
+                    "id": 8045,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "758:5:36",
@@ -476,11 +476,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7980,
+                  "id": 8048,
                   "indexed": false,
                   "name": "returnData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "771:16:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -489,7 +489,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7979,
+                    "id": 8047,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "771:5:36",
@@ -508,7 +508,7 @@
           },
           {
             "body": {
-              "id": 7997,
+              "id": 8065,
               "nodeType": "Block",
               "src": "881:93:36",
               "statements": [
@@ -521,11 +521,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 7993,
+                            "id": 8061,
                             "name": "_script",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7984,
+                            "referencedDeclaration": 8052,
                             "src": "958:7:36",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes_memory_ptr",
@@ -545,18 +545,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 7990,
+                              "id": 8058,
                               "name": "getEVMScriptRegistry",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8017,
+                              "referencedDeclaration": 8085,
                               "src": "917:20:36",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEVMScriptRegistry_$8164_$",
+                                "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEVMScriptRegistry_$8232_$",
                                 "typeString": "function () view returns (contract IEVMScriptRegistry)"
                               }
                             },
-                            "id": 7991,
+                            "id": 8059,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -566,25 +566,25 @@
                             "nodeType": "FunctionCall",
                             "src": "917:22:36",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                              "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                               "typeString": "contract IEVMScriptRegistry"
                             }
                           },
-                          "id": 7992,
+                          "id": 8060,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "getScriptExecutor",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 8163,
+                          "referencedDeclaration": 8231,
                           "src": "917:40:36",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8137_$",
+                            "typeIdentifier": "t_function_external_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8205_$",
                             "typeString": "function (bytes memory) view external returns (contract IEVMScriptExecutor)"
                           }
                         },
-                        "id": 7994,
+                        "id": 8062,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -594,7 +594,7 @@
                         "nodeType": "FunctionCall",
                         "src": "917:49:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       }
@@ -602,22 +602,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       ],
-                      "id": 7989,
+                      "id": 8057,
                       "name": "IEVMScriptExecutor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8137,
+                      "referencedDeclaration": 8205,
                       "src": "898:18:36",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8137_$",
+                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8205_$",
                         "typeString": "type(contract IEVMScriptExecutor)"
                       }
                     },
-                    "id": 7995,
+                    "id": 8063,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -627,19 +627,19 @@
                     "nodeType": "FunctionCall",
                     "src": "898:69:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
-                  "functionReturnParameters": 7988,
-                  "id": 7996,
+                  "functionReturnParameters": 8056,
+                  "id": 8064,
                   "nodeType": "Return",
                   "src": "891:76:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 7998,
+            "id": 8066,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -647,15 +647,15 @@
             "name": "getEVMScriptExecutor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7985,
+              "id": 8053,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7984,
+                  "id": 8052,
                   "name": "_script",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7998,
+                  "scope": 8066,
                   "src": "825:13:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -664,7 +664,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7983,
+                    "id": 8051,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "825:5:36",
@@ -681,31 +681,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7988,
+              "id": 8056,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7987,
+                  "id": 8055,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7998,
+                  "scope": 8066,
                   "src": "861:18:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                    "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                     "typeString": "contract IEVMScriptExecutor"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7986,
+                    "id": 8054,
                     "name": "IEVMScriptExecutor",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8137,
+                    "referencedDeclaration": 8205,
                     "src": "861:18:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
@@ -715,7 +715,7 @@
               ],
               "src": "860:20:36"
             },
-            "scope": 8117,
+            "scope": 8185,
             "src": "795:179:36",
             "stateMutability": "view",
             "superFunction": null,
@@ -723,21 +723,21 @@
           },
           {
             "body": {
-              "id": 8016,
+              "id": 8084,
               "nodeType": "Block",
               "src": "1053:158:36",
               "statements": [
                 {
                   "assignments": [
-                    8004
+                    8072
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8004,
+                      "id": 8072,
                       "name": "registryAddr",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8017,
+                      "scope": 8085,
                       "src": "1063:20:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -746,7 +746,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 8003,
+                        "id": 8071,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "1063:7:36",
@@ -759,17 +759,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8011,
+                  "id": 8079,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8008,
+                        "id": 8076,
                         "name": "KERNEL_APP_ADDR_NAMESPACE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9407,
+                        "referencedDeclaration": 9475,
                         "src": "1102:25:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -778,11 +778,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8009,
+                        "id": 8077,
                         "name": "EVMSCRIPT_REGISTRY_APP_ID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8143,
+                        "referencedDeclaration": 8211,
                         "src": "1129:25:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -806,18 +806,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 8005,
+                          "id": 8073,
                           "name": "kernel",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6622,
+                          "referencedDeclaration": 6690,
                           "src": "1086:6:36",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8894_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8962_$",
                             "typeString": "function () view returns (contract IKernel)"
                           }
                         },
-                        "id": 8006,
+                        "id": 8074,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -827,25 +827,25 @@
                         "nodeType": "FunctionCall",
                         "src": "1086:8:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IKernel_$8894",
+                          "typeIdentifier": "t_contract$_IKernel_$8962",
                           "typeString": "contract IKernel"
                         }
                       },
-                      "id": 8007,
+                      "id": 8075,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getApp",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 8893,
+                      "referencedDeclaration": 8961,
                       "src": "1086:15:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$_t_bytes32_$returns$_t_address_$",
                         "typeString": "function (bytes32,bytes32) view external returns (address)"
                       }
                     },
-                    "id": 8010,
+                    "id": 8078,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -868,11 +868,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8013,
+                        "id": 8081,
                         "name": "registryAddr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8004,
+                        "referencedDeclaration": 8072,
                         "src": "1191:12:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -887,18 +887,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 8012,
+                      "id": 8080,
                       "name": "IEVMScriptRegistry",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8164,
+                      "referencedDeclaration": 8232,
                       "src": "1172:18:36",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptRegistry_$8164_$",
+                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptRegistry_$8232_$",
                         "typeString": "type(contract IEVMScriptRegistry)"
                       }
                     },
-                    "id": 8014,
+                    "id": 8082,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -908,19 +908,19 @@
                     "nodeType": "FunctionCall",
                     "src": "1172:32:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                       "typeString": "contract IEVMScriptRegistry"
                     }
                   },
-                  "functionReturnParameters": 8002,
-                  "id": 8015,
+                  "functionReturnParameters": 8070,
+                  "id": 8083,
                   "nodeType": "Return",
                   "src": "1165:39:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 8017,
+            "id": 8085,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -928,38 +928,38 @@
             "name": "getEVMScriptRegistry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7999,
+              "id": 8067,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1009:2:36"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8002,
+              "id": 8070,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8001,
+                  "id": 8069,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8017,
+                  "scope": 8085,
                   "src": "1033:18:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                    "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                     "typeString": "contract IEVMScriptRegistry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8000,
+                    "id": 8068,
                     "name": "IEVMScriptRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8164,
+                    "referencedDeclaration": 8232,
                     "src": "1033:18:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                       "typeString": "contract IEVMScriptRegistry"
                     }
                   },
@@ -969,7 +969,7 @@
               ],
               "src": "1032:20:36"
             },
-            "scope": 8117,
+            "scope": 8185,
             "src": "980:231:36",
             "stateMutability": "view",
             "superFunction": null,
@@ -977,37 +977,37 @@
           },
           {
             "body": {
-              "id": 8081,
+              "id": 8149,
               "nodeType": "Block",
               "src": "1375:3054:36",
               "statements": [
                 {
                   "assignments": [
-                    8034
+                    8102
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8034,
+                      "id": 8102,
                       "name": "executor",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1385:27:36",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                         "typeString": "contract IEVMScriptExecutor"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 8033,
+                        "id": 8101,
                         "name": "IEVMScriptExecutor",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 8137,
+                        "referencedDeclaration": 8205,
                         "src": "1385:18:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       },
@@ -1015,17 +1015,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8038,
+                  "id": 8106,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8036,
+                        "id": 8104,
                         "name": "_script",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
+                        "referencedDeclaration": 8087,
                         "src": "1436:7:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1040,18 +1040,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 8035,
+                      "id": 8103,
                       "name": "getEVMScriptExecutor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7998,
+                      "referencedDeclaration": 8066,
                       "src": "1415:20:36",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8137_$",
+                        "typeIdentifier": "t_function_internal_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8205_$",
                         "typeString": "function (bytes memory) view returns (contract IEVMScriptExecutor)"
                       }
                     },
-                    "id": 8037,
+                    "id": 8105,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1061,7 +1061,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1415:29:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
@@ -1078,7 +1078,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 8046,
+                        "id": 8114,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1088,14 +1088,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 8041,
+                              "id": 8109,
                               "name": "executor",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8034,
+                              "referencedDeclaration": 8102,
                               "src": "1470:8:36",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                                 "typeString": "contract IEVMScriptExecutor"
                               }
                             }
@@ -1103,11 +1103,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                                 "typeString": "contract IEVMScriptExecutor"
                               }
                             ],
-                            "id": 8040,
+                            "id": 8108,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1120,7 +1120,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 8042,
+                          "id": 8110,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1142,7 +1142,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 8044,
+                              "id": 8112,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1165,7 +1165,7 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 8043,
+                            "id": 8111,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1178,7 +1178,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 8045,
+                          "id": 8113,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1200,11 +1200,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8047,
+                        "id": 8115,
                         "name": "ERROR_EXECUTOR_UNAVAILABLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7969,
+                        "referencedDeclaration": 8037,
                         "src": "1495:26:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -1223,21 +1223,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 8039,
+                      "id": 8107,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10606,
-                        10607
+                        10674,
+                        10675
                       ],
-                      "referencedDeclaration": 10607,
+                      "referencedDeclaration": 10675,
                       "src": "1454:7:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 8048,
+                    "id": 8116,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1251,21 +1251,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8049,
+                  "id": 8117,
                   "nodeType": "ExpressionStatement",
                   "src": "1454:68:36"
                 },
                 {
                   "assignments": [
-                    8051
+                    8119
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8051,
+                      "id": 8119,
                       "name": "sig",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1533:10:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1274,7 +1274,7 @@
                         "typeString": "bytes4"
                       },
                       "typeName": {
-                        "id": 8050,
+                        "id": 8118,
                         "name": "bytes4",
                         "nodeType": "ElementaryTypeName",
                         "src": "1533:6:36",
@@ -1287,39 +1287,39 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8055,
+                  "id": 8123,
                   "initialValue": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8052,
+                        "id": 8120,
                         "name": "executor",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8034,
+                        "referencedDeclaration": 8102,
                         "src": "1546:8:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       },
-                      "id": 8053,
+                      "id": 8121,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "execScript",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 8131,
+                      "referencedDeclaration": 8199,
                       "src": "1546:19:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$_t_array$_t_address_$dyn_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes memory,bytes memory,address[] memory) external returns (bytes memory)"
                       }
                     },
-                    "id": 8054,
+                    "id": 8122,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1338,15 +1338,15 @@
                 },
                 {
                   "assignments": [
-                    8057
+                    8125
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8057,
+                      "id": 8125,
                       "name": "data",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1584:17:36",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1355,7 +1355,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 8056,
+                        "id": 8124,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "1584:5:36",
@@ -1368,17 +1368,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8065,
+                  "id": 8133,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8060,
+                        "id": 8128,
                         "name": "sig",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8051,
+                        "referencedDeclaration": 8119,
                         "src": "1627:3:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -1387,11 +1387,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8061,
+                        "id": 8129,
                         "name": "_script",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
+                        "referencedDeclaration": 8087,
                         "src": "1632:7:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1400,11 +1400,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8062,
+                        "id": 8130,
                         "name": "_input",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8021,
+                        "referencedDeclaration": 8089,
                         "src": "1641:6:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1413,11 +1413,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8063,
+                        "id": 8131,
                         "name": "_blacklist",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8024,
+                        "referencedDeclaration": 8092,
                         "src": "1649:10:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
@@ -1446,18 +1446,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8058,
+                        "id": 8126,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10590,
+                        "referencedDeclaration": 10658,
                         "src": "1604:3:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
                         }
                       },
-                      "id": 8059,
+                      "id": 8127,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1471,7 +1471,7 @@
                         "typeString": "function (bytes4) pure returns (bytes memory)"
                       }
                     },
-                    "id": 8064,
+                    "id": 8132,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1493,10 +1493,10 @@
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8067,
+                      "id": 8135,
                       "name": "output",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1671:19:36",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1505,7 +1505,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 8066,
+                        "id": 8134,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "1671:5:36",
@@ -1518,7 +1518,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8068,
+                  "id": 8136,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "1671:19:36"
@@ -1527,7 +1527,7 @@
                   "externalReferences": [
                     {
                       "data": {
-                        "declaration": 8057,
+                        "declaration": 8125,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1930:4:36",
@@ -1536,7 +1536,7 @@
                     },
                     {
                       "data": {
-                        "declaration": 8057,
+                        "declaration": 8125,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1874:4:36",
@@ -1545,7 +1545,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2136:6:36",
@@ -1554,7 +1554,7 @@
                     },
                     {
                       "executor": {
-                        "declaration": 8034,
+                        "declaration": 8102,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1823:8:36",
@@ -1563,7 +1563,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2845:6:36",
@@ -1572,7 +1572,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2980:6:36",
@@ -1581,7 +1581,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3113:6:36",
@@ -1590,7 +1590,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3244:6:36",
@@ -1599,7 +1599,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3365:6:36",
@@ -1608,7 +1608,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "4185:6:36",
@@ -1617,7 +1617,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2326:6:36",
@@ -1626,7 +1626,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2376:6:36",
@@ -1635,7 +1635,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "4247:6:36",
@@ -1643,7 +1643,7 @@
                       }
                     }
                   ],
-                  "id": 8069,
+                  "id": 8137,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let success := delegatecall(gas(), executor, add(data, 0x20), mload(data), 0, 0)\n    output := mload(0x40)\n    switch success\n    case 0 {\n        returndatacopy(output, 0, returndatasize())\n        revert(output, returndatasize())\n    }\n    default {\n        switch gt(returndatasize(), 0x3f)\n        case 0 {\n            mstore(output, 0x08c379a000000000000000000000000000000000000000000000000000000000)\n            mstore(add(output, 0x04), 0x0000000000000000000000000000000000000000000000000000000000000020)\n            mstore(add(output, 0x24), 0x000000000000000000000000000000000000000000000000000000000000001e)\n            mstore(add(output, 0x44), 0x45564d52554e5f4558454355544f525f494e56414c49445f52455455524e0000)\n            revert(output, 100)\n        }\n        default {\n            let copysize := sub(returndatasize(), 0x20)\n            returndatacopy(output, 0x20, copysize)\n            mstore(0x40, add(output, copysize))\n        }\n    }\n}",
                   "src": "1700:2641:36"
@@ -1657,14 +1657,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 8072,
+                            "id": 8140,
                             "name": "executor",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8034,
+                            "referencedDeclaration": 8102,
                             "src": "4363:8:36",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                               "typeString": "contract IEVMScriptExecutor"
                             }
                           }
@@ -1672,11 +1672,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                               "typeString": "contract IEVMScriptExecutor"
                             }
                           ],
-                          "id": 8071,
+                          "id": 8139,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1689,7 +1689,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 8073,
+                        "id": 8141,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1705,11 +1705,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8074,
+                        "id": 8142,
                         "name": "_script",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
+                        "referencedDeclaration": 8087,
                         "src": "4374:7:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1718,11 +1718,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8075,
+                        "id": 8143,
                         "name": "_input",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8021,
+                        "referencedDeclaration": 8089,
                         "src": "4383:6:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1731,11 +1731,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8076,
+                        "id": 8144,
                         "name": "output",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8067,
+                        "referencedDeclaration": 8135,
                         "src": "4391:6:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1762,18 +1762,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 8070,
+                      "id": 8138,
                       "name": "ScriptResult",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7982,
+                      "referencedDeclaration": 8050,
                       "src": "4342:12:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$__$",
                         "typeString": "function (address,bytes memory,bytes memory,bytes memory)"
                       }
                     },
-                    "id": 8077,
+                    "id": 8145,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1787,47 +1787,47 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8078,
+                  "id": 8146,
                   "nodeType": "EmitStatement",
                   "src": "4337:61:36"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8079,
+                    "id": 8147,
                     "name": "output",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8067,
+                    "referencedDeclaration": 8135,
                     "src": "4416:6:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 8032,
-                  "id": 8080,
+                  "functionReturnParameters": 8100,
+                  "id": 8148,
                   "nodeType": "Return",
                   "src": "4409:13:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 8082,
+            "id": 8150,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8027,
+                "id": 8095,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8026,
+                  "id": 8094,
                   "name": "isInitialized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 7046,
+                  "referencedDeclaration": 7114,
                   "src": "1312:13:36",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1839,14 +1839,14 @@
               },
               {
                 "arguments": null,
-                "id": 8029,
+                "id": 8097,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8028,
+                  "id": 8096,
                   "name": "protectState",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 8116,
+                  "referencedDeclaration": 8184,
                   "src": "1334:12:36",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1860,15 +1860,15 @@
             "name": "runScript",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8025,
+              "id": 8093,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8019,
+                  "id": 8087,
                   "name": "_script",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1236:13:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1877,7 +1877,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8018,
+                    "id": 8086,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1236:5:36",
@@ -1891,10 +1891,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 8021,
+                  "id": 8089,
                   "name": "_input",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1251:12:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1903,7 +1903,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8020,
+                    "id": 8088,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1251:5:36",
@@ -1917,10 +1917,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 8024,
+                  "id": 8092,
                   "name": "_blacklist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1265:20:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1930,7 +1930,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8022,
+                      "id": 8090,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "1265:7:36",
@@ -1939,7 +1939,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 8023,
+                    "id": 8091,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "1265:9:36",
@@ -1956,15 +1956,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8032,
+              "id": 8100,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8031,
+                  "id": 8099,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1364:5:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1973,7 +1973,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8030,
+                    "id": 8098,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:5:36",
@@ -1988,7 +1988,7 @@
               ],
               "src": "1363:7:36"
             },
-            "scope": 8117,
+            "scope": 8185,
             "src": "1217:3212:36",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1996,21 +1996,21 @@
           },
           {
             "body": {
-              "id": 8115,
+              "id": 8183,
               "nodeType": "Block",
               "src": "4457:260:36",
               "statements": [
                 {
                   "assignments": [
-                    8085
+                    8153
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8085,
+                      "id": 8153,
                       "name": "preKernel",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8116,
+                      "scope": 8184,
                       "src": "4467:17:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2019,7 +2019,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 8084,
+                        "id": 8152,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "4467:7:36",
@@ -2032,7 +2032,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8090,
+                  "id": 8158,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -2041,18 +2041,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 8087,
+                          "id": 8155,
                           "name": "kernel",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6622,
+                          "referencedDeclaration": 6690,
                           "src": "4495:6:36",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8894_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8962_$",
                             "typeString": "function () view returns (contract IKernel)"
                           }
                         },
-                        "id": 8088,
+                        "id": 8156,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2062,7 +2062,7 @@
                         "nodeType": "FunctionCall",
                         "src": "4495:8:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IKernel_$8894",
+                          "typeIdentifier": "t_contract$_IKernel_$8962",
                           "typeString": "contract IKernel"
                         }
                       }
@@ -2070,11 +2070,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IKernel_$8894",
+                          "typeIdentifier": "t_contract$_IKernel_$8962",
                           "typeString": "contract IKernel"
                         }
                       ],
-                      "id": 8086,
+                      "id": 8154,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2087,7 +2087,7 @@
                       },
                       "typeName": "address"
                     },
-                    "id": 8089,
+                    "id": 8157,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2106,15 +2106,15 @@
                 },
                 {
                   "assignments": [
-                    8092
+                    8160
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8092,
+                      "id": 8160,
                       "name": "preAppId",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8116,
+                      "scope": 8184,
                       "src": "4514:16:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2123,7 +2123,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 8091,
+                        "id": 8159,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "4514:7:36",
@@ -2136,24 +2136,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8095,
+                  "id": 8163,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 8093,
+                      "id": 8161,
                       "name": "appId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6632,
+                      "referencedDeclaration": 6700,
                       "src": "4533:5:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes32_$",
                         "typeString": "function () view returns (bytes32)"
                       }
                     },
-                    "id": 8094,
+                    "id": 8162,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2171,7 +2171,7 @@
                   "src": "4514:26:36"
                 },
                 {
-                  "id": 8096,
+                  "id": 8164,
                   "nodeType": "PlaceholderStatement",
                   "src": "4550:1:36"
                 },
@@ -2185,7 +2185,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 8103,
+                        "id": 8171,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2198,18 +2198,18 @@
                               "arguments": [],
                               "expression": {
                                 "argumentTypes": [],
-                                "id": 8099,
+                                "id": 8167,
                                 "name": "kernel",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 6622,
+                                "referencedDeclaration": 6690,
                                 "src": "4585:6:36",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8894_$",
+                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8962_$",
                                   "typeString": "function () view returns (contract IKernel)"
                                 }
                               },
-                              "id": 8100,
+                              "id": 8168,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2219,7 +2219,7 @@
                               "nodeType": "FunctionCall",
                               "src": "4585:8:36",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IKernel_$8894",
+                                "typeIdentifier": "t_contract$_IKernel_$8962",
                                 "typeString": "contract IKernel"
                               }
                             }
@@ -2227,11 +2227,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IKernel_$8894",
+                                "typeIdentifier": "t_contract$_IKernel_$8962",
                                 "typeString": "contract IKernel"
                               }
                             ],
-                            "id": 8098,
+                            "id": 8166,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2244,7 +2244,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 8101,
+                          "id": 8169,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2262,11 +2262,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 8102,
+                          "id": 8170,
                           "name": "preKernel",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8085,
+                          "referencedDeclaration": 8153,
                           "src": "4598:9:36",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2281,11 +2281,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8104,
+                        "id": 8172,
                         "name": "ERROR_PROTECTED_STATE_MODIFIED",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7972,
+                        "referencedDeclaration": 8040,
                         "src": "4609:30:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -2304,21 +2304,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 8097,
+                      "id": 8165,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10606,
-                        10607
+                        10674,
+                        10675
                       ],
-                      "referencedDeclaration": 10607,
+                      "referencedDeclaration": 10675,
                       "src": "4569:7:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 8105,
+                    "id": 8173,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2332,7 +2332,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8106,
+                  "id": 8174,
                   "nodeType": "ExpressionStatement",
                   "src": "4569:71:36"
                 },
@@ -2346,7 +2346,7 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 8111,
+                        "id": 8179,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2356,18 +2356,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 8108,
+                            "id": 8176,
                             "name": "appId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6632,
+                            "referencedDeclaration": 6700,
                             "src": "4658:5:36",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes32_$",
                               "typeString": "function () view returns (bytes32)"
                             }
                           },
-                          "id": 8109,
+                          "id": 8177,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2385,11 +2385,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 8110,
+                          "id": 8178,
                           "name": "preAppId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8092,
+                          "referencedDeclaration": 8160,
                           "src": "4669:8:36",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -2404,11 +2404,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8112,
+                        "id": 8180,
                         "name": "ERROR_PROTECTED_STATE_MODIFIED",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7972,
+                        "referencedDeclaration": 8040,
                         "src": "4679:30:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -2427,21 +2427,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 8107,
+                      "id": 8175,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10606,
-                        10607
+                        10674,
+                        10675
                       ],
-                      "referencedDeclaration": 10607,
+                      "referencedDeclaration": 10675,
                       "src": "4650:7:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 8113,
+                    "id": 8181,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2455,18 +2455,18 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8114,
+                  "id": 8182,
                   "nodeType": "ExpressionStatement",
                   "src": "4650:60:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 8116,
+            "id": 8184,
             "name": "protectState",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 8083,
+              "id": 8151,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4457:0:36"
@@ -2475,7 +2475,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 8118,
+        "scope": 8186,
         "src": "254:4465:36"
       }
     ],
@@ -2485,14 +2485,14 @@
     "absolutePath": "@aragon/os/contracts/evmscript/EVMScriptRunner.sol",
     "exportedSymbols": {
       "EVMScriptRunner": [
-        8117
+        8185
       ]
     },
-    "id": 8118,
+    "id": 8186,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7953,
+        "id": 8021,
         "literals": [
           "solidity",
           "^",
@@ -2505,10 +2505,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/IEVMScriptExecutor.sol",
         "file": "./IEVMScriptExecutor.sol",
-        "id": 7954,
+        "id": 8022,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 8138,
+        "scope": 8186,
+        "sourceUnit": 8206,
         "src": "70:34:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2516,10 +2516,10 @@
       {
         "absolutePath": "@aragon/os/contracts/evmscript/IEVMScriptRegistry.sol",
         "file": "./IEVMScriptRegistry.sol",
-        "id": 7955,
+        "id": 8023,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 8165,
+        "scope": 8186,
+        "sourceUnit": 8233,
         "src": "105:34:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2527,10 +2527,10 @@
       {
         "absolutePath": "@aragon/os/contracts/apps/AppStorage.sol",
         "file": "../apps/AppStorage.sol",
-        "id": 7956,
+        "id": 8024,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 6660,
+        "scope": 8186,
+        "sourceUnit": 6728,
         "src": "141:32:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2538,10 +2538,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/KernelConstants.sol",
         "file": "../kernel/KernelConstants.sol",
-        "id": 7957,
+        "id": 8025,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 9409,
+        "scope": 8186,
+        "sourceUnit": 9477,
         "src": "174:39:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2549,10 +2549,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/Initializable.sol",
         "file": "../common/Initializable.sol",
-        "id": 7958,
+        "id": 8026,
         "nodeType": "ImportDirective",
-        "scope": 8118,
-        "sourceUnit": 7105,
+        "scope": 8186,
+        "sourceUnit": 7173,
         "src": "214:37:36",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2563,17 +2563,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7959,
+              "id": 8027,
               "name": "AppStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6659,
+              "referencedDeclaration": 6727,
               "src": "282:10:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AppStorage_$6659",
+                "typeIdentifier": "t_contract$_AppStorage_$6727",
                 "typeString": "contract AppStorage"
               }
             },
-            "id": 7960,
+            "id": 8028,
             "nodeType": "InheritanceSpecifier",
             "src": "282:10:36"
           },
@@ -2581,17 +2581,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7961,
+              "id": 8029,
               "name": "Initializable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7104,
+              "referencedDeclaration": 7172,
               "src": "294:13:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Initializable_$7104",
+                "typeIdentifier": "t_contract$_Initializable_$7172",
                 "typeString": "contract Initializable"
               }
             },
-            "id": 7962,
+            "id": 8030,
             "nodeType": "InheritanceSpecifier",
             "src": "294:13:36"
           },
@@ -2599,17 +2599,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7963,
+              "id": 8031,
               "name": "EVMScriptRegistryConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8144,
+              "referencedDeclaration": 8212,
               "src": "309:26:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8144",
+                "typeIdentifier": "t_contract$_EVMScriptRegistryConstants_$8212",
                 "typeString": "contract EVMScriptRegistryConstants"
               }
             },
-            "id": 7964,
+            "id": 8032,
             "nodeType": "InheritanceSpecifier",
             "src": "309:26:36"
           },
@@ -2617,49 +2617,49 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7965,
+              "id": 8033,
               "name": "KernelNamespaceConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9408,
+              "referencedDeclaration": 9476,
               "src": "337:24:36",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$9408",
+                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$9476",
                 "typeString": "contract KernelNamespaceConstants"
               }
             },
-            "id": 7966,
+            "id": 8034,
             "nodeType": "InheritanceSpecifier",
             "src": "337:24:36"
           }
         ],
         "contractDependencies": [
-          6659,
-          7104,
-          7494,
-          8144,
-          9408
+          6727,
+          7172,
+          7562,
+          8212,
+          9476
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8117,
+        "id": 8185,
         "linearizedBaseContracts": [
-          8117,
-          9408,
-          8144,
-          7104,
-          7494,
-          6659
+          8185,
+          9476,
+          8212,
+          7172,
+          7562,
+          6727
         ],
         "name": "EVMScriptRunner",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 7969,
+            "id": 8037,
             "name": "ERROR_EXECUTOR_UNAVAILABLE",
             "nodeType": "VariableDeclaration",
-            "scope": 8117,
+            "scope": 8185,
             "src": "368:82:36",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2668,7 +2668,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 7967,
+              "id": 8035,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "368:6:36",
@@ -2680,7 +2680,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "45564d52554e5f4558454355544f525f554e415641494c41424c45",
-              "id": 7968,
+              "id": 8036,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2699,10 +2699,10 @@
           },
           {
             "constant": true,
-            "id": 7972,
+            "id": 8040,
             "name": "ERROR_PROTECTED_STATE_MODIFIED",
             "nodeType": "VariableDeclaration",
-            "scope": 8117,
+            "scope": 8185,
             "src": "456:90:36",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2711,7 +2711,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 7970,
+              "id": 8038,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "456:6:36",
@@ -2723,7 +2723,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "45564d52554e5f50524f5445435445445f53544154455f4d4f444946494544",
-              "id": 7971,
+              "id": 8039,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2743,20 +2743,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 7982,
+            "id": 8050,
             "name": "ScriptResult",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 7981,
+              "id": 8049,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7974,
+                  "id": 8042,
                   "indexed": true,
                   "name": "executor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "718:24:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2765,7 +2765,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7973,
+                    "id": 8041,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "718:7:36",
@@ -2779,11 +2779,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7976,
+                  "id": 8044,
                   "indexed": false,
                   "name": "script",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "744:12:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2792,7 +2792,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7975,
+                    "id": 8043,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "744:5:36",
@@ -2806,11 +2806,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7978,
+                  "id": 8046,
                   "indexed": false,
                   "name": "input",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "758:11:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2819,7 +2819,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7977,
+                    "id": 8045,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "758:5:36",
@@ -2833,11 +2833,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 7980,
+                  "id": 8048,
                   "indexed": false,
                   "name": "returnData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7982,
+                  "scope": 8050,
                   "src": "771:16:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2846,7 +2846,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7979,
+                    "id": 8047,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "771:5:36",
@@ -2865,7 +2865,7 @@
           },
           {
             "body": {
-              "id": 7997,
+              "id": 8065,
               "nodeType": "Block",
               "src": "881:93:36",
               "statements": [
@@ -2878,11 +2878,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 7993,
+                            "id": 8061,
                             "name": "_script",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7984,
+                            "referencedDeclaration": 8052,
                             "src": "958:7:36",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes_memory_ptr",
@@ -2902,18 +2902,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 7990,
+                              "id": 8058,
                               "name": "getEVMScriptRegistry",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8017,
+                              "referencedDeclaration": 8085,
                               "src": "917:20:36",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEVMScriptRegistry_$8164_$",
+                                "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEVMScriptRegistry_$8232_$",
                                 "typeString": "function () view returns (contract IEVMScriptRegistry)"
                               }
                             },
-                            "id": 7991,
+                            "id": 8059,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2923,25 +2923,25 @@
                             "nodeType": "FunctionCall",
                             "src": "917:22:36",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                              "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                               "typeString": "contract IEVMScriptRegistry"
                             }
                           },
-                          "id": 7992,
+                          "id": 8060,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "getScriptExecutor",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 8163,
+                          "referencedDeclaration": 8231,
                           "src": "917:40:36",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8137_$",
+                            "typeIdentifier": "t_function_external_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8205_$",
                             "typeString": "function (bytes memory) view external returns (contract IEVMScriptExecutor)"
                           }
                         },
-                        "id": 7994,
+                        "id": 8062,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2951,7 +2951,7 @@
                         "nodeType": "FunctionCall",
                         "src": "917:49:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       }
@@ -2959,22 +2959,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       ],
-                      "id": 7989,
+                      "id": 8057,
                       "name": "IEVMScriptExecutor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8137,
+                      "referencedDeclaration": 8205,
                       "src": "898:18:36",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8137_$",
+                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptExecutor_$8205_$",
                         "typeString": "type(contract IEVMScriptExecutor)"
                       }
                     },
-                    "id": 7995,
+                    "id": 8063,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2984,19 +2984,19 @@
                     "nodeType": "FunctionCall",
                     "src": "898:69:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
-                  "functionReturnParameters": 7988,
-                  "id": 7996,
+                  "functionReturnParameters": 8056,
+                  "id": 8064,
                   "nodeType": "Return",
                   "src": "891:76:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 7998,
+            "id": 8066,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3004,15 +3004,15 @@
             "name": "getEVMScriptExecutor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7985,
+              "id": 8053,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7984,
+                  "id": 8052,
                   "name": "_script",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7998,
+                  "scope": 8066,
                   "src": "825:13:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3021,7 +3021,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7983,
+                    "id": 8051,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "825:5:36",
@@ -3038,31 +3038,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7988,
+              "id": 8056,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7987,
+                  "id": 8055,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7998,
+                  "scope": 8066,
                   "src": "861:18:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                    "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                     "typeString": "contract IEVMScriptExecutor"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7986,
+                    "id": 8054,
                     "name": "IEVMScriptExecutor",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8137,
+                    "referencedDeclaration": 8205,
                     "src": "861:18:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
@@ -3072,7 +3072,7 @@
               ],
               "src": "860:20:36"
             },
-            "scope": 8117,
+            "scope": 8185,
             "src": "795:179:36",
             "stateMutability": "view",
             "superFunction": null,
@@ -3080,21 +3080,21 @@
           },
           {
             "body": {
-              "id": 8016,
+              "id": 8084,
               "nodeType": "Block",
               "src": "1053:158:36",
               "statements": [
                 {
                   "assignments": [
-                    8004
+                    8072
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8004,
+                      "id": 8072,
                       "name": "registryAddr",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8017,
+                      "scope": 8085,
                       "src": "1063:20:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3103,7 +3103,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 8003,
+                        "id": 8071,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "1063:7:36",
@@ -3116,17 +3116,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8011,
+                  "id": 8079,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8008,
+                        "id": 8076,
                         "name": "KERNEL_APP_ADDR_NAMESPACE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9407,
+                        "referencedDeclaration": 9475,
                         "src": "1102:25:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -3135,11 +3135,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8009,
+                        "id": 8077,
                         "name": "EVMSCRIPT_REGISTRY_APP_ID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8143,
+                        "referencedDeclaration": 8211,
                         "src": "1129:25:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -3163,18 +3163,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 8005,
+                          "id": 8073,
                           "name": "kernel",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6622,
+                          "referencedDeclaration": 6690,
                           "src": "1086:6:36",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8894_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8962_$",
                             "typeString": "function () view returns (contract IKernel)"
                           }
                         },
-                        "id": 8006,
+                        "id": 8074,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3184,25 +3184,25 @@
                         "nodeType": "FunctionCall",
                         "src": "1086:8:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IKernel_$8894",
+                          "typeIdentifier": "t_contract$_IKernel_$8962",
                           "typeString": "contract IKernel"
                         }
                       },
-                      "id": 8007,
+                      "id": 8075,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getApp",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 8893,
+                      "referencedDeclaration": 8961,
                       "src": "1086:15:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$_t_bytes32_$returns$_t_address_$",
                         "typeString": "function (bytes32,bytes32) view external returns (address)"
                       }
                     },
-                    "id": 8010,
+                    "id": 8078,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3225,11 +3225,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8013,
+                        "id": 8081,
                         "name": "registryAddr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8004,
+                        "referencedDeclaration": 8072,
                         "src": "1191:12:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -3244,18 +3244,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 8012,
+                      "id": 8080,
                       "name": "IEVMScriptRegistry",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8164,
+                      "referencedDeclaration": 8232,
                       "src": "1172:18:36",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptRegistry_$8164_$",
+                        "typeIdentifier": "t_type$_t_contract$_IEVMScriptRegistry_$8232_$",
                         "typeString": "type(contract IEVMScriptRegistry)"
                       }
                     },
-                    "id": 8014,
+                    "id": 8082,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3265,19 +3265,19 @@
                     "nodeType": "FunctionCall",
                     "src": "1172:32:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                       "typeString": "contract IEVMScriptRegistry"
                     }
                   },
-                  "functionReturnParameters": 8002,
-                  "id": 8015,
+                  "functionReturnParameters": 8070,
+                  "id": 8083,
                   "nodeType": "Return",
                   "src": "1165:39:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 8017,
+            "id": 8085,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3285,38 +3285,38 @@
             "name": "getEVMScriptRegistry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7999,
+              "id": 8067,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1009:2:36"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8002,
+              "id": 8070,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8001,
+                  "id": 8069,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8017,
+                  "scope": 8085,
                   "src": "1033:18:36",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                    "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                     "typeString": "contract IEVMScriptRegistry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8000,
+                    "id": 8068,
                     "name": "IEVMScriptRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8164,
+                    "referencedDeclaration": 8232,
                     "src": "1033:18:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8164",
+                      "typeIdentifier": "t_contract$_IEVMScriptRegistry_$8232",
                       "typeString": "contract IEVMScriptRegistry"
                     }
                   },
@@ -3326,7 +3326,7 @@
               ],
               "src": "1032:20:36"
             },
-            "scope": 8117,
+            "scope": 8185,
             "src": "980:231:36",
             "stateMutability": "view",
             "superFunction": null,
@@ -3334,37 +3334,37 @@
           },
           {
             "body": {
-              "id": 8081,
+              "id": 8149,
               "nodeType": "Block",
               "src": "1375:3054:36",
               "statements": [
                 {
                   "assignments": [
-                    8034
+                    8102
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8034,
+                      "id": 8102,
                       "name": "executor",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1385:27:36",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                        "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                         "typeString": "contract IEVMScriptExecutor"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 8033,
+                        "id": 8101,
                         "name": "IEVMScriptExecutor",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 8137,
+                        "referencedDeclaration": 8205,
                         "src": "1385:18:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       },
@@ -3372,17 +3372,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8038,
+                  "id": 8106,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8036,
+                        "id": 8104,
                         "name": "_script",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
+                        "referencedDeclaration": 8087,
                         "src": "1436:7:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -3397,18 +3397,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 8035,
+                      "id": 8103,
                       "name": "getEVMScriptExecutor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7998,
+                      "referencedDeclaration": 8066,
                       "src": "1415:20:36",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8137_$",
+                        "typeIdentifier": "t_function_internal_view$_t_bytes_memory_ptr_$returns$_t_contract$_IEVMScriptExecutor_$8205_$",
                         "typeString": "function (bytes memory) view returns (contract IEVMScriptExecutor)"
                       }
                     },
-                    "id": 8037,
+                    "id": 8105,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3418,7 +3418,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1415:29:36",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                      "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                       "typeString": "contract IEVMScriptExecutor"
                     }
                   },
@@ -3435,7 +3435,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 8046,
+                        "id": 8114,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3445,14 +3445,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 8041,
+                              "id": 8109,
                               "name": "executor",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8034,
+                              "referencedDeclaration": 8102,
                               "src": "1470:8:36",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                                 "typeString": "contract IEVMScriptExecutor"
                               }
                             }
@@ -3460,11 +3460,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                                "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                                 "typeString": "contract IEVMScriptExecutor"
                               }
                             ],
-                            "id": 8040,
+                            "id": 8108,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -3477,7 +3477,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 8042,
+                          "id": 8110,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3499,7 +3499,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 8044,
+                              "id": 8112,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -3522,7 +3522,7 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 8043,
+                            "id": 8111,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -3535,7 +3535,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 8045,
+                          "id": 8113,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3557,11 +3557,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8047,
+                        "id": 8115,
                         "name": "ERROR_EXECUTOR_UNAVAILABLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7969,
+                        "referencedDeclaration": 8037,
                         "src": "1495:26:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -3580,21 +3580,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 8039,
+                      "id": 8107,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10606,
-                        10607
+                        10674,
+                        10675
                       ],
-                      "referencedDeclaration": 10607,
+                      "referencedDeclaration": 10675,
                       "src": "1454:7:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 8048,
+                    "id": 8116,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3608,21 +3608,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8049,
+                  "id": 8117,
                   "nodeType": "ExpressionStatement",
                   "src": "1454:68:36"
                 },
                 {
                   "assignments": [
-                    8051
+                    8119
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8051,
+                      "id": 8119,
                       "name": "sig",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1533:10:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3631,7 +3631,7 @@
                         "typeString": "bytes4"
                       },
                       "typeName": {
-                        "id": 8050,
+                        "id": 8118,
                         "name": "bytes4",
                         "nodeType": "ElementaryTypeName",
                         "src": "1533:6:36",
@@ -3644,39 +3644,39 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8055,
+                  "id": 8123,
                   "initialValue": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8052,
+                        "id": 8120,
                         "name": "executor",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8034,
+                        "referencedDeclaration": 8102,
                         "src": "1546:8:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                          "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                           "typeString": "contract IEVMScriptExecutor"
                         }
                       },
-                      "id": 8053,
+                      "id": 8121,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "execScript",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 8131,
+                      "referencedDeclaration": 8199,
                       "src": "1546:19:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$_t_array$_t_address_$dyn_memory_ptr_$returns$_t_bytes_memory_ptr_$",
                         "typeString": "function (bytes memory,bytes memory,address[] memory) external returns (bytes memory)"
                       }
                     },
-                    "id": 8054,
+                    "id": 8122,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3695,15 +3695,15 @@
                 },
                 {
                   "assignments": [
-                    8057
+                    8125
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8057,
+                      "id": 8125,
                       "name": "data",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1584:17:36",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -3712,7 +3712,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 8056,
+                        "id": 8124,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "1584:5:36",
@@ -3725,17 +3725,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8065,
+                  "id": 8133,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8060,
+                        "id": 8128,
                         "name": "sig",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8051,
+                        "referencedDeclaration": 8119,
                         "src": "1627:3:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -3744,11 +3744,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8061,
+                        "id": 8129,
                         "name": "_script",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
+                        "referencedDeclaration": 8087,
                         "src": "1632:7:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -3757,11 +3757,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8062,
+                        "id": 8130,
                         "name": "_input",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8021,
+                        "referencedDeclaration": 8089,
                         "src": "1641:6:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -3770,11 +3770,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8063,
+                        "id": 8131,
                         "name": "_blacklist",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8024,
+                        "referencedDeclaration": 8092,
                         "src": "1649:10:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
@@ -3803,18 +3803,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8058,
+                        "id": 8126,
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10590,
+                        "referencedDeclaration": 10658,
                         "src": "1604:3:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
                           "typeString": "abi"
                         }
                       },
-                      "id": 8059,
+                      "id": 8127,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3828,7 +3828,7 @@
                         "typeString": "function (bytes4) pure returns (bytes memory)"
                       }
                     },
-                    "id": 8064,
+                    "id": 8132,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3850,10 +3850,10 @@
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8067,
+                      "id": 8135,
                       "name": "output",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8082,
+                      "scope": 8150,
                       "src": "1671:19:36",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -3862,7 +3862,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 8066,
+                        "id": 8134,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "1671:5:36",
@@ -3875,7 +3875,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8068,
+                  "id": 8136,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "1671:19:36"
@@ -3884,7 +3884,7 @@
                   "externalReferences": [
                     {
                       "data": {
-                        "declaration": 8057,
+                        "declaration": 8125,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1930:4:36",
@@ -3893,7 +3893,7 @@
                     },
                     {
                       "data": {
-                        "declaration": 8057,
+                        "declaration": 8125,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1874:4:36",
@@ -3902,7 +3902,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2136:6:36",
@@ -3911,7 +3911,7 @@
                     },
                     {
                       "executor": {
-                        "declaration": 8034,
+                        "declaration": 8102,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1823:8:36",
@@ -3920,7 +3920,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2845:6:36",
@@ -3929,7 +3929,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2980:6:36",
@@ -3938,7 +3938,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3113:6:36",
@@ -3947,7 +3947,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3244:6:36",
@@ -3956,7 +3956,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3365:6:36",
@@ -3965,7 +3965,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "4185:6:36",
@@ -3974,7 +3974,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2326:6:36",
@@ -3983,7 +3983,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2376:6:36",
@@ -3992,7 +3992,7 @@
                     },
                     {
                       "output": {
-                        "declaration": 8067,
+                        "declaration": 8135,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "4247:6:36",
@@ -4000,7 +4000,7 @@
                       }
                     }
                   ],
-                  "id": 8069,
+                  "id": 8137,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let success := delegatecall(gas(), executor, add(data, 0x20), mload(data), 0, 0)\n    output := mload(0x40)\n    switch success\n    case 0 {\n        returndatacopy(output, 0, returndatasize())\n        revert(output, returndatasize())\n    }\n    default {\n        switch gt(returndatasize(), 0x3f)\n        case 0 {\n            mstore(output, 0x08c379a000000000000000000000000000000000000000000000000000000000)\n            mstore(add(output, 0x04), 0x0000000000000000000000000000000000000000000000000000000000000020)\n            mstore(add(output, 0x24), 0x000000000000000000000000000000000000000000000000000000000000001e)\n            mstore(add(output, 0x44), 0x45564d52554e5f4558454355544f525f494e56414c49445f52455455524e0000)\n            revert(output, 100)\n        }\n        default {\n            let copysize := sub(returndatasize(), 0x20)\n            returndatacopy(output, 0x20, copysize)\n            mstore(0x40, add(output, copysize))\n        }\n    }\n}",
                   "src": "1700:2641:36"
@@ -4014,14 +4014,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 8072,
+                            "id": 8140,
                             "name": "executor",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 8034,
+                            "referencedDeclaration": 8102,
                             "src": "4363:8:36",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                               "typeString": "contract IEVMScriptExecutor"
                             }
                           }
@@ -4029,11 +4029,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8137",
+                              "typeIdentifier": "t_contract$_IEVMScriptExecutor_$8205",
                               "typeString": "contract IEVMScriptExecutor"
                             }
                           ],
-                          "id": 8071,
+                          "id": 8139,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4046,7 +4046,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 8073,
+                        "id": 8141,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4062,11 +4062,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8074,
+                        "id": 8142,
                         "name": "_script",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
+                        "referencedDeclaration": 8087,
                         "src": "4374:7:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4075,11 +4075,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8075,
+                        "id": 8143,
                         "name": "_input",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8021,
+                        "referencedDeclaration": 8089,
                         "src": "4383:6:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4088,11 +4088,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8076,
+                        "id": 8144,
                         "name": "output",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8067,
+                        "referencedDeclaration": 8135,
                         "src": "4391:6:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4119,18 +4119,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 8070,
+                      "id": 8138,
                       "name": "ScriptResult",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7982,
+                      "referencedDeclaration": 8050,
                       "src": "4342:12:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$__$",
                         "typeString": "function (address,bytes memory,bytes memory,bytes memory)"
                       }
                     },
-                    "id": 8077,
+                    "id": 8145,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4144,47 +4144,47 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8078,
+                  "id": 8146,
                   "nodeType": "EmitStatement",
                   "src": "4337:61:36"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8079,
+                    "id": 8147,
                     "name": "output",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8067,
+                    "referencedDeclaration": 8135,
                     "src": "4416:6:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 8032,
-                  "id": 8080,
+                  "functionReturnParameters": 8100,
+                  "id": 8148,
                   "nodeType": "Return",
                   "src": "4409:13:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 8082,
+            "id": 8150,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8027,
+                "id": 8095,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8026,
+                  "id": 8094,
                   "name": "isInitialized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 7046,
+                  "referencedDeclaration": 7114,
                   "src": "1312:13:36",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -4196,14 +4196,14 @@
               },
               {
                 "arguments": null,
-                "id": 8029,
+                "id": 8097,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8028,
+                  "id": 8096,
                   "name": "protectState",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 8116,
+                  "referencedDeclaration": 8184,
                   "src": "1334:12:36",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -4217,15 +4217,15 @@
             "name": "runScript",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8025,
+              "id": 8093,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8019,
+                  "id": 8087,
                   "name": "_script",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1236:13:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4234,7 +4234,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8018,
+                    "id": 8086,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1236:5:36",
@@ -4248,10 +4248,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 8021,
+                  "id": 8089,
                   "name": "_input",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1251:12:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4260,7 +4260,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8020,
+                    "id": 8088,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1251:5:36",
@@ -4274,10 +4274,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 8024,
+                  "id": 8092,
                   "name": "_blacklist",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1265:20:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4287,7 +4287,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8022,
+                      "id": 8090,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "1265:7:36",
@@ -4296,7 +4296,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 8023,
+                    "id": 8091,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "1265:9:36",
@@ -4313,15 +4313,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8032,
+              "id": 8100,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8031,
+                  "id": 8099,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8082,
+                  "scope": 8150,
                   "src": "1364:5:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4330,7 +4330,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8030,
+                    "id": 8098,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:5:36",
@@ -4345,7 +4345,7 @@
               ],
               "src": "1363:7:36"
             },
-            "scope": 8117,
+            "scope": 8185,
             "src": "1217:3212:36",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -4353,21 +4353,21 @@
           },
           {
             "body": {
-              "id": 8115,
+              "id": 8183,
               "nodeType": "Block",
               "src": "4457:260:36",
               "statements": [
                 {
                   "assignments": [
-                    8085
+                    8153
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8085,
+                      "id": 8153,
                       "name": "preKernel",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8116,
+                      "scope": 8184,
                       "src": "4467:17:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4376,7 +4376,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 8084,
+                        "id": 8152,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "4467:7:36",
@@ -4389,7 +4389,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8090,
+                  "id": 8158,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -4398,18 +4398,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 8087,
+                          "id": 8155,
                           "name": "kernel",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6622,
+                          "referencedDeclaration": 6690,
                           "src": "4495:6:36",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8894_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8962_$",
                             "typeString": "function () view returns (contract IKernel)"
                           }
                         },
-                        "id": 8088,
+                        "id": 8156,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4419,7 +4419,7 @@
                         "nodeType": "FunctionCall",
                         "src": "4495:8:36",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IKernel_$8894",
+                          "typeIdentifier": "t_contract$_IKernel_$8962",
                           "typeString": "contract IKernel"
                         }
                       }
@@ -4427,11 +4427,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IKernel_$8894",
+                          "typeIdentifier": "t_contract$_IKernel_$8962",
                           "typeString": "contract IKernel"
                         }
                       ],
-                      "id": 8086,
+                      "id": 8154,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -4444,7 +4444,7 @@
                       },
                       "typeName": "address"
                     },
-                    "id": 8089,
+                    "id": 8157,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4463,15 +4463,15 @@
                 },
                 {
                   "assignments": [
-                    8092
+                    8160
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8092,
+                      "id": 8160,
                       "name": "preAppId",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8116,
+                      "scope": 8184,
                       "src": "4514:16:36",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4480,7 +4480,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 8091,
+                        "id": 8159,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "4514:7:36",
@@ -4493,24 +4493,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8095,
+                  "id": 8163,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 8093,
+                      "id": 8161,
                       "name": "appId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6632,
+                      "referencedDeclaration": 6700,
                       "src": "4533:5:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes32_$",
                         "typeString": "function () view returns (bytes32)"
                       }
                     },
-                    "id": 8094,
+                    "id": 8162,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4528,7 +4528,7 @@
                   "src": "4514:26:36"
                 },
                 {
-                  "id": 8096,
+                  "id": 8164,
                   "nodeType": "PlaceholderStatement",
                   "src": "4550:1:36"
                 },
@@ -4542,7 +4542,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 8103,
+                        "id": 8171,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4555,18 +4555,18 @@
                               "arguments": [],
                               "expression": {
                                 "argumentTypes": [],
-                                "id": 8099,
+                                "id": 8167,
                                 "name": "kernel",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 6622,
+                                "referencedDeclaration": 6690,
                                 "src": "4585:6:36",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8894_$",
+                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IKernel_$8962_$",
                                   "typeString": "function () view returns (contract IKernel)"
                                 }
                               },
-                              "id": 8100,
+                              "id": 8168,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -4576,7 +4576,7 @@
                               "nodeType": "FunctionCall",
                               "src": "4585:8:36",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IKernel_$8894",
+                                "typeIdentifier": "t_contract$_IKernel_$8962",
                                 "typeString": "contract IKernel"
                               }
                             }
@@ -4584,11 +4584,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IKernel_$8894",
+                                "typeIdentifier": "t_contract$_IKernel_$8962",
                                 "typeString": "contract IKernel"
                               }
                             ],
-                            "id": 8098,
+                            "id": 8166,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -4601,7 +4601,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 8101,
+                          "id": 8169,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4619,11 +4619,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 8102,
+                          "id": 8170,
                           "name": "preKernel",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8085,
+                          "referencedDeclaration": 8153,
                           "src": "4598:9:36",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -4638,11 +4638,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8104,
+                        "id": 8172,
                         "name": "ERROR_PROTECTED_STATE_MODIFIED",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7972,
+                        "referencedDeclaration": 8040,
                         "src": "4609:30:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -4661,21 +4661,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 8097,
+                      "id": 8165,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10606,
-                        10607
+                        10674,
+                        10675
                       ],
-                      "referencedDeclaration": 10607,
+                      "referencedDeclaration": 10675,
                       "src": "4569:7:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 8105,
+                    "id": 8173,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4689,7 +4689,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8106,
+                  "id": 8174,
                   "nodeType": "ExpressionStatement",
                   "src": "4569:71:36"
                 },
@@ -4703,7 +4703,7 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 8111,
+                        "id": 8179,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4713,18 +4713,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 8108,
+                            "id": 8176,
                             "name": "appId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6632,
+                            "referencedDeclaration": 6700,
                             "src": "4658:5:36",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes32_$",
                               "typeString": "function () view returns (bytes32)"
                             }
                           },
-                          "id": 8109,
+                          "id": 8177,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4742,11 +4742,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 8110,
+                          "id": 8178,
                           "name": "preAppId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8092,
+                          "referencedDeclaration": 8160,
                           "src": "4669:8:36",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -4761,11 +4761,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 8112,
+                        "id": 8180,
                         "name": "ERROR_PROTECTED_STATE_MODIFIED",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7972,
+                        "referencedDeclaration": 8040,
                         "src": "4679:30:36",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -4784,21 +4784,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 8107,
+                      "id": 8175,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10606,
-                        10607
+                        10674,
+                        10675
                       ],
-                      "referencedDeclaration": 10607,
+                      "referencedDeclaration": 10675,
                       "src": "4650:7:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 8113,
+                    "id": 8181,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4812,18 +4812,18 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8114,
+                  "id": 8182,
                   "nodeType": "ExpressionStatement",
                   "src": "4650:60:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 8116,
+            "id": 8184,
             "name": "protectState",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 8083,
+              "id": 8151,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4457:0:36"
@@ -4832,7 +4832,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 8118,
+        "scope": 8186,
         "src": "254:4465:36"
       }
     ],
@@ -4844,5 +4844,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-10-17T19:35:34.560Z"
+  "updatedAt": "2019-10-17T19:58:52.985Z"
 }

@@ -63,14 +63,14 @@
     "absolutePath": "@aragon/os/contracts/common/IForwarder.sol",
     "exportedSymbols": {
       "IForwarder": [
-        6978
+        7046
       ]
     },
-    "id": 6979,
+    "id": 7047,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6958,
+        "id": 7026,
         "literals": [
           "solidity",
           "^",
@@ -86,9 +86,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 6978,
+        "id": 7046,
         "linearizedBaseContracts": [
-          6978
+          7046
         ],
         "name": "IForwarder",
         "nodeType": "ContractDefinition",
@@ -96,7 +96,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 6963,
+            "id": 7031,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -104,22 +104,22 @@
             "name": "isForwarder",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6959,
+              "id": 7027,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "118:2:24"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6962,
+              "id": 7030,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6961,
+                  "id": 7029,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6963,
+                  "scope": 7031,
                   "src": "144:4:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -128,7 +128,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6960,
+                    "id": 7028,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "144:4:24",
@@ -143,7 +143,7 @@
               ],
               "src": "143:6:24"
             },
-            "scope": 6978,
+            "scope": 7046,
             "src": "98:52:24",
             "stateMutability": "pure",
             "superFunction": null,
@@ -152,7 +152,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 6972,
+            "id": 7040,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -160,15 +160,15 @@
             "name": "canForward",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6968,
+              "id": 7036,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6965,
+                  "id": 7033,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6972,
+                  "scope": 7040,
                   "src": "273:14:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -177,7 +177,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6964,
+                    "id": 7032,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "273:7:24",
@@ -191,10 +191,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6967,
+                  "id": 7035,
                   "name": "evmCallScript",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6972,
+                  "scope": 7040,
                   "src": "289:19:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -203,7 +203,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 6966,
+                    "id": 7034,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "289:5:24",
@@ -220,15 +220,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 6971,
+              "id": 7039,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6970,
+                  "id": 7038,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6972,
+                  "scope": 7040,
                   "src": "331:4:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -237,7 +237,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6969,
+                    "id": 7037,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "331:4:24",
@@ -252,7 +252,7 @@
               ],
               "src": "330:6:24"
             },
-            "scope": 6978,
+            "scope": 7046,
             "src": "253:84:24",
             "stateMutability": "view",
             "superFunction": null,
@@ -261,7 +261,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 6977,
+            "id": 7045,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -269,15 +269,15 @@
             "name": "forward",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6975,
+              "id": 7043,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6974,
+                  "id": 7042,
                   "name": "evmCallScript",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6977,
+                  "scope": 7045,
                   "src": "457:19:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -286,7 +286,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 6973,
+                    "id": 7041,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "457:5:24",
@@ -303,19 +303,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 6976,
+              "id": 7044,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "484:0:24"
             },
-            "scope": 6978,
+            "scope": 7046,
             "src": "440:45:24",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 6979,
+        "scope": 7047,
         "src": "71:416:24"
       }
     ],
@@ -325,14 +325,14 @@
     "absolutePath": "@aragon/os/contracts/common/IForwarder.sol",
     "exportedSymbols": {
       "IForwarder": [
-        6978
+        7046
       ]
     },
-    "id": 6979,
+    "id": 7047,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6958,
+        "id": 7026,
         "literals": [
           "solidity",
           "^",
@@ -348,9 +348,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 6978,
+        "id": 7046,
         "linearizedBaseContracts": [
-          6978
+          7046
         ],
         "name": "IForwarder",
         "nodeType": "ContractDefinition",
@@ -358,7 +358,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 6963,
+            "id": 7031,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -366,22 +366,22 @@
             "name": "isForwarder",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6959,
+              "id": 7027,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "118:2:24"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6962,
+              "id": 7030,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6961,
+                  "id": 7029,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6963,
+                  "scope": 7031,
                   "src": "144:4:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -390,7 +390,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6960,
+                    "id": 7028,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "144:4:24",
@@ -405,7 +405,7 @@
               ],
               "src": "143:6:24"
             },
-            "scope": 6978,
+            "scope": 7046,
             "src": "98:52:24",
             "stateMutability": "pure",
             "superFunction": null,
@@ -414,7 +414,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 6972,
+            "id": 7040,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -422,15 +422,15 @@
             "name": "canForward",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6968,
+              "id": 7036,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6965,
+                  "id": 7033,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6972,
+                  "scope": 7040,
                   "src": "273:14:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -439,7 +439,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6964,
+                    "id": 7032,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "273:7:24",
@@ -453,10 +453,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6967,
+                  "id": 7035,
                   "name": "evmCallScript",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6972,
+                  "scope": 7040,
                   "src": "289:19:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -465,7 +465,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 6966,
+                    "id": 7034,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "289:5:24",
@@ -482,15 +482,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 6971,
+              "id": 7039,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6970,
+                  "id": 7038,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6972,
+                  "scope": 7040,
                   "src": "331:4:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -499,7 +499,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6969,
+                    "id": 7037,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "331:4:24",
@@ -514,7 +514,7 @@
               ],
               "src": "330:6:24"
             },
-            "scope": 6978,
+            "scope": 7046,
             "src": "253:84:24",
             "stateMutability": "view",
             "superFunction": null,
@@ -523,7 +523,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 6977,
+            "id": 7045,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -531,15 +531,15 @@
             "name": "forward",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6975,
+              "id": 7043,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6974,
+                  "id": 7042,
                   "name": "evmCallScript",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6977,
+                  "scope": 7045,
                   "src": "457:19:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -548,7 +548,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 6973,
+                    "id": 7041,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "457:5:24",
@@ -565,19 +565,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 6976,
+              "id": 7044,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "484:0:24"
             },
-            "scope": 6978,
+            "scope": 7046,
             "src": "440:45:24",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 6979,
+        "scope": 7047,
         "src": "71:416:24"
       }
     ],
@@ -589,5 +589,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-10-17T19:35:34.518Z"
+  "updatedAt": "2019-10-17T19:58:52.948Z"
 }

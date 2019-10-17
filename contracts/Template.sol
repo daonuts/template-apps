@@ -68,7 +68,7 @@ contract Template is TemplateBase {
       _cacheToken(token, msg.sender);
     }
 
-    function newInstance(address[] _holders) public {
+    function newInstance(address[] _holders, string _guardianTokenName, string _currencyTokenName) public {
     /* function newInstance() public { */
         Kernel dao = fac.newDAO(this);
         ACL acl = ACL(dao.acl());
@@ -80,36 +80,38 @@ contract Template is TemplateBase {
 
         Airdrop airdrop = Airdrop(dao.newAppInstance(airdropAppId, latestVersionAppBase(airdropAppId)));
         Voting voting = Voting(dao.newAppInstance(votingAppId, latestVersionAppBase(votingAppId)));
-        TokenManager tokenManager = TokenManager(dao.newAppInstance(tokenManagerAppId, latestVersionAppBase(tokenManagerAppId)));
+        TokenManager guardianTokenManager = TokenManager(dao.newAppInstance(tokenManagerAppId, latestVersionAppBase(tokenManagerAppId)));
+        TokenManager currencyTokenManager = TokenManager(dao.newAppInstance(tokenManagerAppId, latestVersionAppBase(tokenManagerAppId)));
 
         /* MiniMeToken token = tokenFactory.createCloneToken(MiniMeToken(0), 0, "Guardian", 18, "GUARD", false); */
-        MiniMeToken token = _popTokenCache(msg.sender, "Guardian");
-        token.changeController(tokenManager);
+        MiniMeToken guardianToken = _popTokenCache(msg.sender, _guardianTokenName);
+        guardianToken.changeController(guardianTokenManager);
+
+        MiniMeToken currencyToken = _popTokenCache(msg.sender, _guardianTokenName);
+        currencyToken.changeController(currencyTokenManager);
 
         // Initialize apps
-        tokenManager.initialize(token, false, 0);
-        emit InstalledApp(tokenManager, tokenManagerAppId);
-        voting.initialize(token, uint64(60*10**16), uint64(15*10**16), uint64(1 days));
+        guardianTokenManager.initialize(guardianToken, false, 0);
+        emit InstalledApp(guardianTokenManager, tokenManagerAppId);
+        currencyTokenManager.initialize(currencyToken, true, 0);
+        emit InstalledApp(currencyTokenManager, tokenManagerAppId);
+        voting.initialize(guardianToken, uint64(60*10**16), uint64(15*10**16), uint64(1 days));
         emit InstalledApp(voting, votingAppId);
-        airdrop.initialize(tokenManager);
+        airdrop.initialize(currencyTokenManager);
         emit InstalledApp(airdrop, airdropAppId);
 
-        /* acl.createPermission(voting, voting, voting.MODIFY_SUPPORT_ROLE(), voting); */
-        /* acl.createPermission(voting, voting, voting.MODIFY_QUORUM_ROLE(), voting); */
-        acl.createPermission(tokenManager, voting, voting.CREATE_VOTES_ROLE(), voting);
-        acl.createPermission(voting, tokenManager, tokenManager.BURN_ROLE(), voting);
+        acl.createPermission(guardianTokenManager, voting, voting.CREATE_VOTES_ROLE(), voting);
+        acl.createPermission(voting, guardianTokenManager, guardianTokenManager.BURN_ROLE(), voting);
         acl.createPermission(voting, airdrop, airdrop.START_ROLE(), voting);
-        acl.createPermission(this, tokenManager, tokenManager.MINT_ROLE(), this);
+        acl.createPermission(this, guardianTokenManager, guardianTokenManager.MINT_ROLE(), this);
+        acl.createPermission(airdrop, currencyTokenManager, currencyTokenManager.MINT_ROLE(), voting);
 
-        for (uint i=0; i<_holders.length; i++) {
-            tokenManager.mint(_holders[i], 1e18); // Give 1 token to each holder
-        }
+        _mintHolders(guardianTokenManager, _holders);
 
         // Clean up permissions
-
-        acl.grantPermission(airdrop, tokenManager, tokenManager.MINT_ROLE());
-        acl.revokePermission(this, tokenManager, tokenManager.MINT_ROLE());
-        acl.setPermissionManager(voting, tokenManager, tokenManager.MINT_ROLE());
+        acl.grantPermission(voting, guardianTokenManager, guardianTokenManager.MINT_ROLE());
+        acl.revokePermission(this, guardianTokenManager, guardianTokenManager.MINT_ROLE());
+        acl.setPermissionManager(voting, guardianTokenManager, guardianTokenManager.MINT_ROLE());
 
         acl.grantPermission(voting, dao, dao.APP_MANAGER_ROLE());
         acl.revokePermission(this, dao, dao.APP_MANAGER_ROLE());
@@ -120,6 +122,12 @@ contract Template is TemplateBase {
         acl.setPermissionManager(voting, acl, acl.CREATE_PERMISSIONS_ROLE());
 
         emit DeployDao(dao);
+    }
+
+    function _mintHolders(TokenManager _tokenManager, address[] _holders) internal {
+        for (uint i=0; i<_holders.length; i++) {
+            _tokenManager.mint(_holders[i], 1e18); // Give 1 token to each holder
+        }
     }
 
 }
