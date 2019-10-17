@@ -87,7 +87,7 @@ contract Template is TemplateBase {
         MiniMeToken guardianToken = _popTokenCache(msg.sender, _guardianTokenName);
         guardianToken.changeController(guardianTokenManager);
 
-        MiniMeToken currencyToken = _popTokenCache(msg.sender, _guardianTokenName);
+        MiniMeToken currencyToken = _popTokenCache(msg.sender, _currencyTokenName);
         currencyToken.changeController(currencyTokenManager);
 
         // Initialize apps
