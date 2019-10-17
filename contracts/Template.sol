@@ -68,8 +68,8 @@ contract Template is TemplateBase {
       _cacheToken(token, msg.sender);
     }
 
-    /* function newInstance(address[] _holders) public { */
-    function newInstance() public {
+    function newInstance(address[] _holders) public {
+    /* function newInstance() public { */
         Kernel dao = fac.newDAO(this);
         ACL acl = ACL(dao.acl());
         acl.createPermission(this, dao, dao.APP_MANAGER_ROLE(), this);
@@ -101,9 +101,9 @@ contract Template is TemplateBase {
         acl.createPermission(voting, airdrop, airdrop.START_ROLE(), voting);
         acl.createPermission(this, tokenManager, tokenManager.MINT_ROLE(), this);
 
-        /* for (uint i=0; i<_holders.length; i++) {
+        for (uint i=0; i<_holders.length; i++) {
             tokenManager.mint(_holders[i], 1e18); // Give 1 token to each holder
-        } */
+        }
 
         // Clean up permissions
 
