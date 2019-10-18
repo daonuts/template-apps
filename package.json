@@ -23,19 +23,11 @@
 		"parcel-bundler": "^1.12.3"
 	},
 	"scripts": {
-		"start": "aragon run --port 8546",
-		"start:template": "npm run start -- --template Template --template-init @ARAGON_ENS --files dist",
-		"start:http": "aragon run --http localhost:1234 --http-served-from ./dist",
-		"start:http:template": "npm run start:http -- --template Template --template-init @ARAGON_ENS",
 		"test": "aragon contracts test",
 		"compile": "aragon contracts compile",
-		"sync-assets": "copy-aragon-ui-assets -n aragon-ui ./dist",
-		"build:app": "parcel build app/index.html -d dist/ --public-url '.' --no-cache",
-		"build:script": "parcel build app/src/script.js -d dist/ --no-cache",
-		"build": "npm run sync-assets && npm run build:app && npm run build:script",
-		"publish:patch": "aragon apm publish patch --files dist --skip-confirmation",
-		"publish:minor": "aragon apm publish minor --files dist --skip-confirmation",
-		"publish:major": "aragon apm publish major --files dist --skip-confirmation",
+		"publish:patch": "aragon apm publish patch --skip-confirmation",
+		"publish:minor": "aragon apm publish minor --skip-confirmation",
+		"publish:major": "aragon apm publish major --init @ARAGON_ENS --skip-confirmation",
 		"deploy:template": "aragon deploy Template --init @ARAGON_ENS",
 		"versions": "aragon apm versions",
 		"clean": "rm -rf build && rm -rf dist"
