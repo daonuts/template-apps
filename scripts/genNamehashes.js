@@ -3,7 +3,7 @@ const names = [
   {name: "bare-kit.aragonpm.eth", variable: "bareKitId"},
   {name: "airdrop-app.open.aragonpm.eth", variable: "airdropAppId"},
   {name: "voting.aragonpm.eth", variable: "votingAppId"},
-  {name: "token-manageraragonpm.eth", variable: "tokenManagerAppId"}
+  {name: "token-manager.aragonpm.eth", variable: "tokenManagerAppId"}
 ]
 
 names.forEach(({name, variable})=>{

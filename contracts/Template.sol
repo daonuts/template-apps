@@ -34,8 +34,8 @@ contract Template is TokenCache {
     bytes32 constant airdropAppId = 0x356065541af8b2e74db8b224183c7552774bd8246b1191179719921d9c97d4c2;
     //namehash("voting.aragonpm.eth")
     bytes32 constant votingAppId = 0x9fa3927f639745e587912d4b0fea7ef9013bf93fb907d29faeab57417ba6e1d4;
-    //namehash("token-manageraragonpm.eth")
-    bytes32 constant tokenManagerAppId = 0x35d4a35860c750bac3afb42b11e94da331fddad24975c61c28fb569cd5c0c5cd;
+    //namehash("token-manager.aragonpm.eth")
+    bytes32 constant tokenManagerAppId = 0x6b20a3010614eeebf2138ccec99f028a61c811b3b1a3343b6ff635985c75c91f;
 
     event DeployDao(address dao);
     event InstalledApp(address appProxy, bytes32 appId);
@@ -47,12 +47,11 @@ contract Template is TokenCache {
     }
 
     function createToken(string _name, uint8 _decimals, string _symbol, bool _transferable) public {
-      MiniMeToken token = tokenFactory.createCloneToken(MiniMeToken(0), 0, _name, _decimals, _symbol, _transferable);
-      _cacheToken(token, msg.sender);
+        MiniMeToken token = tokenFactory.createCloneToken(MiniMeToken(0), 0, _name, _decimals, _symbol, _transferable);
+        _cacheToken(token, msg.sender);
     }
 
     function newInstance(address[] _holders, string _guardianTokenName, string _currencyTokenName) public {
-    /* function newInstance(string _guardianTokenName, string _currencyTokenName) public { */
         Kernel dao = fac.newDAO(this);
         ACL acl = ACL(dao.acl());
         acl.createPermission(this, dao, dao.APP_MANAGER_ROLE(), this);
