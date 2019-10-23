@@ -40,14 +40,14 @@
     "absolutePath": "@aragon/os/contracts/lib/misc/ERCProxy.sol",
     "exportedSymbols": {
       "ERCProxy": [
-        9311
+        9322
       ]
     },
-    "id": 9312,
+    "id": 9323,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9294,
+        "id": 9305,
         "literals": [
           "solidity",
           "^",
@@ -63,19 +63,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 9311,
+        "id": 9322,
         "linearizedBaseContracts": [
-          9311
+          9322
         ],
         "name": "ERCProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 9297,
+            "id": 9308,
             "name": "FORWARDING",
             "nodeType": "VariableDeclaration",
-            "scope": 9311,
+            "scope": 9322,
             "src": "95:40:46",
             "stateVariable": true,
             "storageLocation": "default",
@@ -84,7 +84,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 9295,
+              "id": 9306,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "95:7:46",
@@ -96,7 +96,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31",
-              "id": 9296,
+              "id": 9307,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -115,10 +115,10 @@
           },
           {
             "constant": true,
-            "id": 9300,
+            "id": 9311,
             "name": "UPGRADEABLE",
             "nodeType": "VariableDeclaration",
-            "scope": 9311,
+            "scope": 9322,
             "src": "141:41:46",
             "stateVariable": true,
             "storageLocation": "default",
@@ -127,7 +127,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 9298,
+              "id": 9309,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "141:7:46",
@@ -139,7 +139,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32",
-              "id": 9299,
+              "id": 9310,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -159,7 +159,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9305,
+            "id": 9316,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -167,22 +167,22 @@
             "name": "proxyType",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9301,
+              "id": 9312,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "207:2:46"
             },
             "payable": false,
             "returnParameters": {
-              "id": 9304,
+              "id": 9315,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9303,
+                  "id": 9314,
                   "name": "proxyTypeId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9305,
+                  "scope": 9316,
                   "src": "231:19:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -191,7 +191,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9302,
+                    "id": 9313,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "231:7:46",
@@ -206,7 +206,7 @@
               ],
               "src": "230:21:46"
             },
-            "scope": 9311,
+            "scope": 9322,
             "src": "189:63:46",
             "stateMutability": "pure",
             "superFunction": null,
@@ -215,7 +215,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9310,
+            "id": 9321,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -223,22 +223,22 @@
             "name": "implementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9306,
+              "id": 9317,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "280:2:46"
             },
             "payable": false,
             "returnParameters": {
-              "id": 9309,
+              "id": 9320,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9308,
+                  "id": 9319,
                   "name": "codeAddr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9310,
+                  "scope": 9321,
                   "src": "304:16:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -247,7 +247,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9307,
+                    "id": 9318,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "304:7:46",
@@ -262,14 +262,14 @@
               ],
               "src": "303:18:46"
             },
-            "scope": 9311,
+            "scope": 9322,
             "src": "257:65:46",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9312,
+        "scope": 9323,
         "src": "71:253:46"
       }
     ],
@@ -279,14 +279,14 @@
     "absolutePath": "@aragon/os/contracts/lib/misc/ERCProxy.sol",
     "exportedSymbols": {
       "ERCProxy": [
-        9311
+        9322
       ]
     },
-    "id": 9312,
+    "id": 9323,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9294,
+        "id": 9305,
         "literals": [
           "solidity",
           "^",
@@ -302,19 +302,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 9311,
+        "id": 9322,
         "linearizedBaseContracts": [
-          9311
+          9322
         ],
         "name": "ERCProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 9297,
+            "id": 9308,
             "name": "FORWARDING",
             "nodeType": "VariableDeclaration",
-            "scope": 9311,
+            "scope": 9322,
             "src": "95:40:46",
             "stateVariable": true,
             "storageLocation": "default",
@@ -323,7 +323,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 9295,
+              "id": 9306,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "95:7:46",
@@ -335,7 +335,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31",
-              "id": 9296,
+              "id": 9307,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -354,10 +354,10 @@
           },
           {
             "constant": true,
-            "id": 9300,
+            "id": 9311,
             "name": "UPGRADEABLE",
             "nodeType": "VariableDeclaration",
-            "scope": 9311,
+            "scope": 9322,
             "src": "141:41:46",
             "stateVariable": true,
             "storageLocation": "default",
@@ -366,7 +366,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 9298,
+              "id": 9309,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "141:7:46",
@@ -378,7 +378,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32",
-              "id": 9299,
+              "id": 9310,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -398,7 +398,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9305,
+            "id": 9316,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -406,22 +406,22 @@
             "name": "proxyType",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9301,
+              "id": 9312,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "207:2:46"
             },
             "payable": false,
             "returnParameters": {
-              "id": 9304,
+              "id": 9315,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9303,
+                  "id": 9314,
                   "name": "proxyTypeId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9305,
+                  "scope": 9316,
                   "src": "231:19:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -430,7 +430,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9302,
+                    "id": 9313,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "231:7:46",
@@ -445,7 +445,7 @@
               ],
               "src": "230:21:46"
             },
-            "scope": 9311,
+            "scope": 9322,
             "src": "189:63:46",
             "stateMutability": "pure",
             "superFunction": null,
@@ -454,7 +454,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9310,
+            "id": 9321,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -462,22 +462,22 @@
             "name": "implementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9306,
+              "id": 9317,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "280:2:46"
             },
             "payable": false,
             "returnParameters": {
-              "id": 9309,
+              "id": 9320,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9308,
+                  "id": 9319,
                   "name": "codeAddr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9310,
+                  "scope": 9321,
                   "src": "304:16:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -486,7 +486,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9307,
+                    "id": 9318,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "304:7:46",
@@ -501,14 +501,14 @@
               ],
               "src": "303:18:46"
             },
-            "scope": 9311,
+            "scope": 9322,
             "src": "257:65:46",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9312,
+        "scope": 9323,
         "src": "71:253:46"
       }
     ],
@@ -520,5 +520,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-10-23T14:45:40.441Z"
+  "updatedAt": "2019-10-23T16:04:19.162Z"
 }

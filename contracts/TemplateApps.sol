@@ -49,6 +49,7 @@ contract TemplateApps {
         bytes32 CREATE_PERMISSIONS_ROLE = _acl.CREATE_PERMISSIONS_ROLE();
 
         _acl.createPermission(_airdrop, _currencyTokenManager, _currencyTokenManager.MINT_ROLE(), _voting);
+        _acl.createPermission(_subscription, _currencyTokenManager, _currencyTokenManager.BURN_ROLE(), _voting);
         _acl.createPermission(_voting, _airdrop, _airdrop.START_ROLE(), _voting);
         _acl.createPermission(_voting, _subscription, _subscription.SET_PRICE_ROLE(), _voting);
         _acl.createPermission(_voting, _subscription, _subscription.SET_DURATION_ROLE(), _voting);
