@@ -1,2 +1,2 @@
-# template
-An aragon dao template
+# template apps
+An aragon dao template apps installer
