@@ -11,15 +11,15 @@ import "@aragon/apps-voting/contracts/Voting.sol";
 
 import "@1hive/airdrop-app/contracts/Airdrop.sol";
 
-import "@daonuts/subscription-app/contracts/Subscription.sol";
+import "@daonuts/subscribe-app/contracts/Subscribe.sol";
 
 contract TemplateApps {
     ENS public ens;
 
     //namehash("airdrop-app.open.aragonpm.eth")
     bytes32 constant airdropAppId = 0x356065541af8b2e74db8b224183c7552774bd8246b1191179719921d9c97d4c2;
-    //namehash("subscription-app.open.aragonpm.eth")
-    bytes32 constant subscriptionAppId = 0xd386d2731a66fd3903d5a74ff0ea1dbb2bdb63c1a71340c2b430496acf99d507;
+    //namehash("subscribe-app.open.aragonpm.eth")
+    bytes32 constant subscribeAppId = 0xb6461185219d266fa4eb5f1acad9b08a010bfd1e1f6a45fe3e169f161d8d5af1;
 
     event InstalledApp(address appProxy, bytes32 appId);
 
@@ -31,28 +31,28 @@ contract TemplateApps {
         ACL acl = ACL(_dao.acl());
 
         Airdrop airdrop = Airdrop(_dao.newAppInstance(airdropAppId, latestVersionAppBase(airdropAppId)));
-        Subscription subscription = Subscription(_dao.newAppInstance(subscriptionAppId, latestVersionAppBase(subscriptionAppId)));
+        Subscribe subscribe = Subscribe(_dao.newAppInstance(subscribeAppId, latestVersionAppBase(subscribeAppId)));
 
         airdrop.initialize(_currencyTokenManager);
         emit InstalledApp(airdrop, airdropAppId);
-        subscription.initialize(_currencyTokenManager, 10000e18, 30 days);
-        emit InstalledApp(subscription, subscriptionAppId);
+        subscribe.initialize(_currencyTokenManager, 10000e18, 30 days);
+        emit InstalledApp(subscribe, subscribeAppId);
 
-        _permissions(_dao, acl, _voting, _currencyTokenManager, airdrop, subscription);
+        _permissions(_dao, acl, _voting, _currencyTokenManager, airdrop, subscribe);
     }
 
     function _permissions(
-        Kernel _dao, ACL _acl, Voting _voting, TokenManager _currencyTokenManager, Airdrop _airdrop, Subscription _subscription
+        Kernel _dao, ACL _acl, Voting _voting, TokenManager _currencyTokenManager, Airdrop _airdrop, Subscribe _subscribe
     ) internal {
 
         bytes32 APP_MANAGER_ROLE = _dao.APP_MANAGER_ROLE();
         bytes32 CREATE_PERMISSIONS_ROLE = _acl.CREATE_PERMISSIONS_ROLE();
 
         _acl.createPermission(_airdrop, _currencyTokenManager, _currencyTokenManager.MINT_ROLE(), _voting);
-        _acl.createPermission(_subscription, _currencyTokenManager, _currencyTokenManager.BURN_ROLE(), _voting);
+        _acl.createPermission(_subscribe, _currencyTokenManager, _currencyTokenManager.BURN_ROLE(), _voting);
         _acl.createPermission(_voting, _airdrop, _airdrop.START_ROLE(), _voting);
-        _acl.createPermission(_voting, _subscription, _subscription.SET_PRICE_ROLE(), _voting);
-        _acl.createPermission(_voting, _subscription, _subscription.SET_DURATION_ROLE(), _voting);
+        _acl.createPermission(_voting, _subscribe, _subscribe.SET_PRICE_ROLE(), _voting);
+        _acl.createPermission(_voting, _subscribe, _subscribe.SET_DURATION_ROLE(), _voting);
 
         _acl.grantPermission(_voting, _dao, APP_MANAGER_ROLE);
         _acl.revokePermission(this, _dao, APP_MANAGER_ROLE);
