@@ -76,14 +76,14 @@
     "absolutePath": "@aragon/os/contracts/common/DepositableDelegateProxy.sol",
     "exportedSymbols": {
       "DepositableDelegateProxy": [
-        6191
+        6234
       ]
     },
-    "id": 6192,
+    "id": 6235,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6154,
+        "id": 6197,
         "literals": [
           "solidity",
           "0.4",
@@ -95,10 +95,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/DelegateProxy.sol",
         "file": "./DelegateProxy.sol",
-        "id": 6155,
+        "id": 6198,
         "nodeType": "ImportDirective",
-        "scope": 6192,
-        "sourceUnit": 6153,
+        "scope": 6235,
+        "sourceUnit": 6196,
         "src": "25:29:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -106,10 +106,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/DepositableStorage.sol",
         "file": "./DepositableStorage.sol",
-        "id": 6156,
+        "id": 6199,
         "nodeType": "ImportDirective",
-        "scope": 6192,
-        "sourceUnit": 6224,
+        "scope": 6235,
+        "sourceUnit": 6267,
         "src": "55:34:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -120,17 +120,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6157,
+              "id": 6200,
               "name": "DepositableStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6223,
+              "referencedDeclaration": 6266,
               "src": "129:18:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DepositableStorage_$6223",
+                "typeIdentifier": "t_contract$_DepositableStorage_$6266",
                 "typeString": "contract DepositableStorage"
               }
             },
-            "id": 6158,
+            "id": 6201,
             "nodeType": "InheritanceSpecifier",
             "src": "129:18:18"
           },
@@ -138,37 +138,37 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6159,
+              "id": 6202,
               "name": "DelegateProxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6152,
+              "referencedDeclaration": 6195,
               "src": "149:13:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DelegateProxy_$6152",
+                "typeIdentifier": "t_contract$_DelegateProxy_$6195",
                 "typeString": "contract DelegateProxy"
               }
             },
-            "id": 6160,
+            "id": 6203,
             "nodeType": "InheritanceSpecifier",
             "src": "149:13:18"
           }
         ],
         "contractDependencies": [
-          6152,
-          6223,
-          6407,
-          8928
+          6195,
+          6266,
+          6450,
+          8971
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 6191,
+        "id": 6234,
         "linearizedBaseContracts": [
-          6191,
-          6152,
-          6407,
-          8928,
-          6223
+          6234,
+          6195,
+          6450,
+          8971,
+          6266
         ],
         "name": "DepositableDelegateProxy",
         "nodeType": "ContractDefinition",
@@ -176,20 +176,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 6166,
+            "id": 6209,
             "name": "ProxyDeposit",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 6165,
+              "id": 6208,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6162,
+                  "id": 6205,
                   "indexed": false,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6166,
+                  "scope": 6209,
                   "src": "188:14:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -198,7 +198,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6161,
+                    "id": 6204,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "188:7:18",
@@ -212,11 +212,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6164,
+                  "id": 6207,
                   "indexed": false,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6166,
+                  "scope": 6209,
                   "src": "204:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -225,7 +225,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6163,
+                    "id": 6206,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "204:7:18",
@@ -244,21 +244,21 @@
           },
           {
             "body": {
-              "id": 6189,
+              "id": 6232,
               "nodeType": "Block",
               "src": "254:1897:18",
               "statements": [
                 {
                   "assignments": [
-                    6170
+                    6213
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 6170,
+                      "id": 6213,
                       "name": "forwardGasThreshold",
                       "nodeType": "VariableDeclaration",
-                      "scope": 6190,
+                      "scope": 6233,
                       "src": "264:27:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -267,7 +267,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 6169,
+                        "id": 6212,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "264:7:18",
@@ -280,14 +280,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 6172,
+                  "id": 6215,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 6171,
+                    "id": 6214,
                     "name": "FWD_GAS_LIMIT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6132,
+                    "referencedDeclaration": 6175,
                     "src": "294:13:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -299,15 +299,15 @@
                 },
                 {
                   "assignments": [
-                    6174
+                    6217
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 6174,
+                      "id": 6217,
                       "name": "isDepositablePosition",
                       "nodeType": "VariableDeclaration",
-                      "scope": 6190,
+                      "scope": 6233,
                       "src": "317:29:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -316,7 +316,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 6173,
+                        "id": 6216,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "317:7:18",
@@ -329,14 +329,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 6176,
+                  "id": 6219,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 6175,
+                    "id": 6218,
                     "name": "DEPOSITABLE_POSITION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6200,
+                    "referencedDeclaration": 6243,
                     "src": "349:20:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
@@ -350,7 +350,7 @@
                   "externalReferences": [
                     {
                       "forwardGasThreshold": {
-                        "declaration": 6170,
+                        "declaration": 6213,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "824:19:18",
@@ -359,7 +359,7 @@
                     },
                     {
                       "isDepositablePosition": {
-                        "declaration": 6174,
+                        "declaration": 6217,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1078:21:18",
@@ -367,22 +367,22 @@
                       }
                     }
                   ],
-                  "id": 6177,
+                  "id": 6220,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    if lt(gas(), forwardGasThreshold)\n    {\n        if and(and(sload(isDepositablePosition), iszero(calldatasize())), gt(callvalue(), 0))\n        {\n            let logData := mload(0x40)\n            mstore(logData, caller())\n            mstore(add(logData, 0x20), callvalue())\n            log1(logData, 0x40, 0x15eeaa57c7bd188c1388020bcadc2c436ec60d647d36ef5b9eb3c742217ddee1)\n            stop()\n        }\n        revert(0, 0)\n    }\n}",
                   "src": "609:1469:18"
                 },
                 {
                   "assignments": [
-                    6179
+                    6222
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 6179,
+                      "id": 6222,
                       "name": "target",
                       "nodeType": "VariableDeclaration",
-                      "scope": 6190,
+                      "scope": 6233,
                       "src": "2071:14:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -391,7 +391,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 6178,
+                        "id": 6221,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "2071:7:18",
@@ -404,24 +404,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 6182,
+                  "id": 6225,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 6180,
+                      "id": 6223,
                       "name": "implementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8927,
+                      "referencedDeclaration": 8970,
                       "src": "2088:14:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                         "typeString": "function () view returns (address)"
                       }
                     },
-                    "id": 6181,
+                    "id": 6224,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -444,11 +444,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6184,
+                        "id": 6227,
                         "name": "target",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6179,
+                        "referencedDeclaration": 6222,
                         "src": "2127:6:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -459,18 +459,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 6185,
+                          "id": 6228,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10556,
+                          "referencedDeclaration": 10679,
                           "src": "2135:3:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 6186,
+                        "id": 6229,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -496,18 +496,18 @@
                           "typeString": "bytes calldata"
                         }
                       ],
-                      "id": 6183,
+                      "id": 6226,
                       "name": "delegatedFwd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6151,
+                      "referencedDeclaration": 6194,
                       "src": "2114:12:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$returns$__$",
                         "typeString": "function (address,bytes memory)"
                       }
                     },
-                    "id": 6187,
+                    "id": 6230,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -521,14 +521,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6188,
+                  "id": 6231,
                   "nodeType": "ExpressionStatement",
                   "src": "2114:30:18"
                 }
               ]
             },
             "documentation": null,
-            "id": 6190,
+            "id": 6233,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -536,26 +536,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6167,
+              "id": 6210,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "234:2:18"
             },
             "payable": true,
             "returnParameters": {
-              "id": 6168,
+              "id": 6211,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "254:0:18"
             },
-            "scope": 6191,
+            "scope": 6234,
             "src": "225:1926:18",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 6192,
+        "scope": 6235,
         "src": "92:2061:18"
       }
     ],
@@ -565,14 +565,14 @@
     "absolutePath": "@aragon/os/contracts/common/DepositableDelegateProxy.sol",
     "exportedSymbols": {
       "DepositableDelegateProxy": [
-        6191
+        6234
       ]
     },
-    "id": 6192,
+    "id": 6235,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6154,
+        "id": 6197,
         "literals": [
           "solidity",
           "0.4",
@@ -584,10 +584,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/DelegateProxy.sol",
         "file": "./DelegateProxy.sol",
-        "id": 6155,
+        "id": 6198,
         "nodeType": "ImportDirective",
-        "scope": 6192,
-        "sourceUnit": 6153,
+        "scope": 6235,
+        "sourceUnit": 6196,
         "src": "25:29:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -595,10 +595,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/DepositableStorage.sol",
         "file": "./DepositableStorage.sol",
-        "id": 6156,
+        "id": 6199,
         "nodeType": "ImportDirective",
-        "scope": 6192,
-        "sourceUnit": 6224,
+        "scope": 6235,
+        "sourceUnit": 6267,
         "src": "55:34:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -609,17 +609,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6157,
+              "id": 6200,
               "name": "DepositableStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6223,
+              "referencedDeclaration": 6266,
               "src": "129:18:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DepositableStorage_$6223",
+                "typeIdentifier": "t_contract$_DepositableStorage_$6266",
                 "typeString": "contract DepositableStorage"
               }
             },
-            "id": 6158,
+            "id": 6201,
             "nodeType": "InheritanceSpecifier",
             "src": "129:18:18"
           },
@@ -627,37 +627,37 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6159,
+              "id": 6202,
               "name": "DelegateProxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6152,
+              "referencedDeclaration": 6195,
               "src": "149:13:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DelegateProxy_$6152",
+                "typeIdentifier": "t_contract$_DelegateProxy_$6195",
                 "typeString": "contract DelegateProxy"
               }
             },
-            "id": 6160,
+            "id": 6203,
             "nodeType": "InheritanceSpecifier",
             "src": "149:13:18"
           }
         ],
         "contractDependencies": [
-          6152,
-          6223,
-          6407,
-          8928
+          6195,
+          6266,
+          6450,
+          8971
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 6191,
+        "id": 6234,
         "linearizedBaseContracts": [
-          6191,
-          6152,
-          6407,
-          8928,
-          6223
+          6234,
+          6195,
+          6450,
+          8971,
+          6266
         ],
         "name": "DepositableDelegateProxy",
         "nodeType": "ContractDefinition",
@@ -665,20 +665,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 6166,
+            "id": 6209,
             "name": "ProxyDeposit",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 6165,
+              "id": 6208,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6162,
+                  "id": 6205,
                   "indexed": false,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6166,
+                  "scope": 6209,
                   "src": "188:14:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -687,7 +687,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6161,
+                    "id": 6204,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "188:7:18",
@@ -701,11 +701,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6164,
+                  "id": 6207,
                   "indexed": false,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6166,
+                  "scope": 6209,
                   "src": "204:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -714,7 +714,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6163,
+                    "id": 6206,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "204:7:18",
@@ -733,21 +733,21 @@
           },
           {
             "body": {
-              "id": 6189,
+              "id": 6232,
               "nodeType": "Block",
               "src": "254:1897:18",
               "statements": [
                 {
                   "assignments": [
-                    6170
+                    6213
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 6170,
+                      "id": 6213,
                       "name": "forwardGasThreshold",
                       "nodeType": "VariableDeclaration",
-                      "scope": 6190,
+                      "scope": 6233,
                       "src": "264:27:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -756,7 +756,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 6169,
+                        "id": 6212,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "264:7:18",
@@ -769,14 +769,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 6172,
+                  "id": 6215,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 6171,
+                    "id": 6214,
                     "name": "FWD_GAS_LIMIT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6132,
+                    "referencedDeclaration": 6175,
                     "src": "294:13:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -788,15 +788,15 @@
                 },
                 {
                   "assignments": [
-                    6174
+                    6217
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 6174,
+                      "id": 6217,
                       "name": "isDepositablePosition",
                       "nodeType": "VariableDeclaration",
-                      "scope": 6190,
+                      "scope": 6233,
                       "src": "317:29:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -805,7 +805,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 6173,
+                        "id": 6216,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "317:7:18",
@@ -818,14 +818,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 6176,
+                  "id": 6219,
                   "initialValue": {
                     "argumentTypes": null,
-                    "id": 6175,
+                    "id": 6218,
                     "name": "DEPOSITABLE_POSITION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6200,
+                    "referencedDeclaration": 6243,
                     "src": "349:20:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
@@ -839,7 +839,7 @@
                   "externalReferences": [
                     {
                       "forwardGasThreshold": {
-                        "declaration": 6170,
+                        "declaration": 6213,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "824:19:18",
@@ -848,7 +848,7 @@
                     },
                     {
                       "isDepositablePosition": {
-                        "declaration": 6174,
+                        "declaration": 6217,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "1078:21:18",
@@ -856,22 +856,22 @@
                       }
                     }
                   ],
-                  "id": 6177,
+                  "id": 6220,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    if lt(gas(), forwardGasThreshold)\n    {\n        if and(and(sload(isDepositablePosition), iszero(calldatasize())), gt(callvalue(), 0))\n        {\n            let logData := mload(0x40)\n            mstore(logData, caller())\n            mstore(add(logData, 0x20), callvalue())\n            log1(logData, 0x40, 0x15eeaa57c7bd188c1388020bcadc2c436ec60d647d36ef5b9eb3c742217ddee1)\n            stop()\n        }\n        revert(0, 0)\n    }\n}",
                   "src": "609:1469:18"
                 },
                 {
                   "assignments": [
-                    6179
+                    6222
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 6179,
+                      "id": 6222,
                       "name": "target",
                       "nodeType": "VariableDeclaration",
-                      "scope": 6190,
+                      "scope": 6233,
                       "src": "2071:14:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -880,7 +880,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 6178,
+                        "id": 6221,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "2071:7:18",
@@ -893,24 +893,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 6182,
+                  "id": 6225,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 6180,
+                      "id": 6223,
                       "name": "implementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8927,
+                      "referencedDeclaration": 8970,
                       "src": "2088:14:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                         "typeString": "function () view returns (address)"
                       }
                     },
-                    "id": 6181,
+                    "id": 6224,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -933,11 +933,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6184,
+                        "id": 6227,
                         "name": "target",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6179,
+                        "referencedDeclaration": 6222,
                         "src": "2127:6:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -948,18 +948,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 6185,
+                          "id": 6228,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10556,
+                          "referencedDeclaration": 10679,
                           "src": "2135:3:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 6186,
+                        "id": 6229,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -985,18 +985,18 @@
                           "typeString": "bytes calldata"
                         }
                       ],
-                      "id": 6183,
+                      "id": 6226,
                       "name": "delegatedFwd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6151,
+                      "referencedDeclaration": 6194,
                       "src": "2114:12:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_bytes_memory_ptr_$returns$__$",
                         "typeString": "function (address,bytes memory)"
                       }
                     },
-                    "id": 6187,
+                    "id": 6230,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1010,14 +1010,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6188,
+                  "id": 6231,
                   "nodeType": "ExpressionStatement",
                   "src": "2114:30:18"
                 }
               ]
             },
             "documentation": null,
-            "id": 6190,
+            "id": 6233,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1025,26 +1025,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6167,
+              "id": 6210,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "234:2:18"
             },
             "payable": true,
             "returnParameters": {
-              "id": 6168,
+              "id": 6211,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "254:0:18"
             },
-            "scope": 6191,
+            "scope": 6234,
             "src": "225:1926:18",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 6192,
+        "scope": 6235,
         "src": "92:2061:18"
       }
     ],
@@ -1056,5 +1056,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-10-24T20:54:41.416Z"
+  "updatedAt": "2019-10-24T23:13:02.062Z"
 }
