@@ -10,10 +10,10 @@
 		"@aragon/apps-voting": "^2.1.0",
 		"@aragon/os": "^4.3.0",
 		"@aragon/templates-shared": "^1.0.0",
-		"@daonuts/airdrop-duo-app": "daonuts/airdrop-duo-app#master",
-		"@daonuts/challenge-app": "daonuts/challenge-app#master",
-		"@daonuts/subscribe-app": "daonuts/subscribe-app#master",
-		"@daonuts/tip-app": "daonuts/tip-app#master",
+		"@daonuts/airdrop-duo": "0.0.1",
+		"@daonuts/challenge": "0.0.1",
+		"@daonuts/subscribe": "0.0.1",
+		"@daonuts/tipping": "0.0.1",
 		"core-js": "^3.1.4",
 		"web3": "^1.2.1"
 	},
@@ -25,7 +25,8 @@
 		"@babel/plugin-proposal-class-properties": "^7.5.5",
 		"@babel/preset-env": "^7.6.0",
 		"homedir": "^0.6.0",
-		"parcel-bundler": "^1.12.3"
+		"parcel-bundler": "^1.12.3",
+		"truffle-extract": "^1.2.1"
 	},
 	"scripts": {
 		"test": "aragon contracts test",
@@ -35,8 +36,19 @@
 		"publish:major": "aragon apm publish major --init @ARAGON_ENS --skip-confirmation",
 		"deploy:template": "aragon deploy Template --init @ARAGON_ENS",
 		"versions": "aragon apm versions",
-		"clean": "rm -rf build && rm -rf dist"
+		"clean": "rm -rf build && rm -rf dist",
+		"abi:extract": "truffle-extract --output abi/ --keys abi",
+		"prepublishOnly": "truffle compile --all && npm run abi:extract -- --no-compile"
 	},
+	"keywords": [],
+	"files": [
+		"/abi",
+		"/arapp.json",
+		"/contracts",
+		"/test"
+	],
+	"author": "Carl Larson <cslarson@gmail.com>",
+	"license": "(GPL-3.0-or-later OR AGPL-3.0-or-later)",
 	"browserslist": [
 		"last 2 Chrome versions"
 	]

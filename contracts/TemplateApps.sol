@@ -9,10 +9,10 @@ import "@aragon/os/contracts/lib/ens/PublicResolver.sol";
 import "@aragon/apps-token-manager/contracts/TokenManager.sol";
 import "@aragon/apps-voting/contracts/Voting.sol";
 
-import "@daonuts/airdrop-duo-app/contracts/AirdropDuo.sol";
-import "@daonuts/challenge-app/contracts/Challenge.sol";
-import "@daonuts/subscribe-app/contracts/Subscribe.sol";
-import "@daonuts/tip-app/contracts/Tip.sol";
+import "@daonuts/airdrop-duo/contracts/AirdropDuo.sol";
+import "@daonuts/challenge/contracts/Challenge.sol";
+import "@daonuts/subscribe/contracts/Subscribe.sol";
+import "@daonuts/tipping/contracts/Tipping.sol";
 
 contract TemplateApps {
     ENS public ens;
@@ -26,8 +26,8 @@ contract TemplateApps {
     bytes32 constant challengeAppId = 0x67c5438d71d05e58f99e88d6fb61ea5356b0f57106d3aba65c823267cc1cd07e;
     //namehash("subscribe-app.open.aragonpm.eth")
     bytes32 constant subscribeAppId = 0xb6461185219d266fa4eb5f1acad9b08a010bfd1e1f6a45fe3e169f161d8d5af1;
-    //namehash("tip-app.open.aragonpm.eth")
-    bytes32 constant tipAppId = 0xc75d5f393be107a3b3f2b5ed1c1fa53b7fe1f347bac8cd9de9158b94312bfd59;
+    //namehash("tipping-app.open.aragonpm.eth")
+    bytes32 constant tippingAppId = 0x2d550bdd0046ce7aa5f255924dc9665972f04f1563519485689baf371e8d224b;
 
     event InstalledApp(address appProxy, bytes32 appId);
 
@@ -43,7 +43,7 @@ contract TemplateApps {
         AirdropDuo airdrop = AirdropDuo(_dao.newAppInstance(airdropDuoAppId, latestVersionAppBase(airdropDuoAppId)));
         Challenge challenge = Challenge(_dao.newAppInstance(challengeAppId, latestVersionAppBase(challengeAppId)));
         Subscribe subscribe = Subscribe(_dao.newAppInstance(subscribeAppId, latestVersionAppBase(subscribeAppId)));
-        Tip tip = Tip(_dao.newAppInstance(tipAppId, latestVersionAppBase(tipAppId)));
+        Tipping tipping = Tipping(_dao.newAppInstance(tippingAppId, latestVersionAppBase(tippingAppId)));
 
         airdrop.initialize(_contribManager, _currencyManager);
         emit InstalledApp(airdrop, airdropDuoAppId);
@@ -54,16 +54,16 @@ contract TemplateApps {
         emit InstalledApp(challenge, challengeAppId);
         subscribe.initialize(_currencyManager, 10000*TOKEN_UNIT, uint64(30 days));
         emit InstalledApp(subscribe, subscribeAppId);
-        tip.initialize(_currencyManager.token());
-        emit InstalledApp(tip, tipAppId);
+        tipping.initialize(_currencyManager.token());
+        emit InstalledApp(tipping, tippingAppId);
 
-        _permissions(_dao, acl, _voting, _contribManager, _currencyManager, airdrop, challenge, subscribe, tip);
+        _permissions(_dao, acl, _voting, _contribManager, _currencyManager, airdrop, challenge, subscribe, tipping);
     }
 
     function _permissions(
         Kernel _dao, ACL _acl, Voting _voting, TokenManager _contribManager,
         TokenManager _currencyManager, AirdropDuo _airdrop, Challenge _challenge,
-        Subscribe _subscribe, Tip tip
+        Subscribe _subscribe, Tipping tipping
     ) internal {
 
         bytes32 APP_MANAGER_ROLE = _dao.APP_MANAGER_ROLE();
@@ -76,7 +76,7 @@ contract TemplateApps {
         _acl.createPermission(_airdrop, _contribManager, _contribManager.MINT_ROLE(), _voting);
         _acl.grantPermission(_airdrop, _currencyManager, CURRENCY_MINT_ROLE);
         _acl.grantPermission(_subscribe, _currencyManager, CURRENCY_BURN_ROLE);
-        _acl.createPermission(_voting, tip, tip.NONE(), _voting);
+        _acl.createPermission(_voting, tipping, tipping.NONE(), _voting);
 
         _acl.createPermission(_challenge, _airdrop, _airdrop.START_ROLE(), _voting);
         _acl.createPermission(_challenge, _subscribe, _subscribe.SET_PRICE_ROLE(), _voting);
