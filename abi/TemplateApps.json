@@ -43,6 +43,18 @@
       "type": "event"
     },
     {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "debug",
+          "type": "address"
+        }
+      ],
+      "name": "Debug",
+      "type": "event"
+    },
+    {
       "constant": false,
       "inputs": [
         {
@@ -59,6 +71,22 @@
         },
         {
           "name": "_currencyManager",
+          "type": "address"
+        },
+        {
+          "name": "_airdrop",
+          "type": "address"
+        },
+        {
+          "name": "_challenge",
+          "type": "address"
+        },
+        {
+          "name": "_subscribe",
+          "type": "address"
+        },
+        {
+          "name": "_tipping",
           "type": "address"
         }
       ],
