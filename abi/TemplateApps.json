@@ -1,31 +1,6 @@
 {
   "abi": [
     {
-      "constant": true,
-      "inputs": [],
-      "name": "ens",
-      "outputs": [
-        {
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "name": "_ens",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "constructor"
-    },
-    {
       "anonymous": false,
       "inputs": [
         {
@@ -43,50 +18,46 @@
       "type": "event"
     },
     {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": false,
-          "name": "debug",
-          "type": "address"
-        }
-      ],
-      "name": "Debug",
-      "type": "event"
-    },
-    {
       "constant": false,
       "inputs": [
         {
-          "name": "_dao",
+          "name": "dao",
           "type": "address"
         },
         {
-          "name": "_voting",
+          "name": "voting",
           "type": "address"
         },
         {
-          "name": "_contribManager",
+          "name": "contribToken",
           "type": "address"
         },
         {
-          "name": "_currencyManager",
+          "name": "contribManager",
           "type": "address"
         },
         {
-          "name": "_airdrop",
+          "name": "currencyToken",
           "type": "address"
         },
         {
-          "name": "_challenge",
+          "name": "currencyManager",
           "type": "address"
         },
         {
-          "name": "_subscribe",
+          "name": "airdrop",
           "type": "address"
         },
         {
-          "name": "_tipping",
+          "name": "challenge",
+          "type": "address"
+        },
+        {
+          "name": "subscribe",
+          "type": "address"
+        },
+        {
+          "name": "tipping",
           "type": "address"
         }
       ],
@@ -94,25 +65,6 @@
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "appId",
-          "type": "bytes32"
-        }
-      ],
-      "name": "latestVersionAppBase",
-      "outputs": [
-        {
-          "name": "base",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
       "type": "function"
     }
   ]
