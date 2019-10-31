@@ -51,7 +51,13 @@ contract TemplateApps {
         acl.createPermission(ANY_ENTITY, harberger, harberger.BURN_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, harberger, harberger.MODIFY_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, contribManager, contribManager.MINT_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, currencyManager, currencyManager.MINT_ROLE(), msg.sender);
+        acl.createPermission(ANY_ENTITY, currencyManager, currencyManager.MINT_ROLE(), this);
+        acl.grantPermission(airdrop, currencyManager, currencyManager.MINT_ROLE());
+        acl.grantPermission(challenge, currencyManager, currencyManager.MINT_ROLE());
+        acl.createPermission(subscribe, currencyManager, currencyManager.BURN_ROLE(), this);
+        acl.grantPermission(airdrop, currencyManager, currencyManager.BURN_ROLE());
+        acl.grantPermission(challenge, currencyManager, currencyManager.BURN_ROLE());
+        acl.grantPermission(harberger, currencyManager, currencyManager.BURN_ROLE());
         acl.createPermission(ANY_ENTITY, voting, voting.CREATE_VOTES_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, airdrop, airdrop.START_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, challenge, challenge.PROPOSE_ROLE(), msg.sender);
