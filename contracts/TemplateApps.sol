@@ -5,12 +5,15 @@ import "@aragon/os/contracts/acl/ACL.sol";
 
 import "@aragon/apps-shared-minime/contracts/MiniMeToken.sol";
 import "@aragon/apps-token-manager/contracts/TokenManager.sol";
-import "@aragon/apps-voting/contracts/Voting.sol";
+/* import "@aragon/apps-voting/contracts/Voting.sol"; */
 
+import "@daonuts/token/contracts/Token.sol";
 import "@daonuts/airdrop-duo/contracts/AirdropDuo.sol";
 import "@daonuts/challenge/contracts/Challenge.sol";
+import "@daonuts/harberger/contracts/Harberger.sol";
 import "@daonuts/subscribe/contracts/Subscribe.sol";
 import "@daonuts/tipping/contracts/Tipping.sol";
+import "@daonuts/capped-voting/contracts/CappedVoting.sol";
 
 contract TemplateApps {
     uint constant TOKEN_UNIT = 10 ** 18;
@@ -24,23 +27,29 @@ contract TemplateApps {
     event InstalledApp(address appProxy, bytes32 appId);
 
     function install(
-        Kernel dao, Voting voting, MiniMeToken contribToken, TokenManager contribManager,
-        MiniMeToken currencyToken, TokenManager currencyManager, AirdropDuo airdrop,
-        Challenge challenge, Subscribe subscribe, Tipping tipping
+        Kernel dao, CappedVoting voting, TokenManager contribManager,
+        TokenManager currencyManager, AirdropDuo airdrop, Challenge challenge,
+        Harberger harberger, Subscribe subscribe, Tipping tipping
     ) public {
         ACL acl = ACL(dao.acl());
 
-        contribManager.initialize(contribToken, false, 0);
-        currencyManager.initialize(currencyToken, true, 0);
-        voting.initialize(contribToken, uint64(60 * 10**16), uint64(15 * 10**16), uint64(1 days));
+        Token contrib = Token(contribManager.token());
+        Token currency = Token(currencyManager.token());
+
+        voting.initialize(contrib, currency, uint64(60 * 10**16), uint64(15 * 10**16), uint64(1 days));
         airdrop.initialize(contribManager, currencyManager);
         challenge.initialize(
           currencyManager, 100*TOKEN_UNIT, 10*TOKEN_UNIT, 50*TOKEN_UNIT,
           uint64(1 minutes), uint64(1 minutes), uint64(1 minutes)
         );
+        harberger.initialize(currencyManager);
         subscribe.initialize(currencyManager, 10000*TOKEN_UNIT, uint64(30 days));
         tipping.initialize(currencyManager.token());
 
+        acl.createPermission(ANY_ENTITY, harberger, harberger.PURCHASE_ROLE(), msg.sender);
+        acl.createPermission(ANY_ENTITY, harberger, harberger.MINT_ROLE(), msg.sender);
+        acl.createPermission(ANY_ENTITY, harberger, harberger.BURN_ROLE(), msg.sender);
+        acl.createPermission(ANY_ENTITY, harberger, harberger.MODIFY_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, contribManager, contribManager.MINT_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, currencyManager, currencyManager.MINT_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, voting, voting.CREATE_VOTES_ROLE(), msg.sender);
