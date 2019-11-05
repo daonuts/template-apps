@@ -5,6 +5,7 @@ import "@aragon/os/contracts/acl/ACL.sol";
 
 import "@aragon/apps-shared-minime/contracts/MiniMeToken.sol";
 import "@aragon/apps-token-manager/contracts/TokenManager.sol";
+import "@aragon/apps-agent/contracts/Agent.sol";
 /* import "@aragon/apps-voting/contracts/Voting.sol"; */
 
 import "@daonuts/token/contracts/Token.sol";
@@ -31,7 +32,7 @@ contract TemplateApps {
     function install(
         Kernel dao, CappedVoting voting, TokenManager contribManager,
         TokenManager currencyManager, AirdropDuo airdrop, Challenge challenge,
-        Harberger harberger, Subscribe subscribe, Tipping tipping
+        Harberger harberger, Subscribe subscribe, Tipping tipping, Agent agent
     ) public {
         ACL acl = ACL(dao.acl());
 
@@ -46,6 +47,7 @@ contract TemplateApps {
         harberger.initialize(currencyManager);
         subscribe.initialize(currencyManager, 10000*TOKEN_UNIT, uint64(30 days));
         tipping.initialize(currencyManager.token());
+        agent.initialize();
 
         acl.createPermission(ANY_ENTITY, harberger, harberger.PURCHASE_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, harberger, MINT_ROLE, msg.sender);
@@ -70,6 +72,7 @@ contract TemplateApps {
         acl.createPermission(ANY_ENTITY, challenge, challenge.SUPPORT_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, subscribe, subscribe.SET_PRICE_ROLE(), msg.sender);
         acl.createPermission(ANY_ENTITY, tipping, tipping.NONE(), msg.sender);
+        acl.createPermission(ANY_ENTITY, agent, agent.EXECUTE_ROLE(), msg.sender);
     }
 
 }
