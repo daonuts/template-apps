@@ -45,7 +45,7 @@ contract TemplateApps {
           uint64(1 minutes), uint64(1 minutes), uint64(1 minutes)
         );
         harberger.initialize(currencyManager);
-        subscribe.initialize(currencyManager, 10000*TOKEN_UNIT, uint64(30 days));
+        subscribe.initialize(currencyManager, 5000*TOKEN_UNIT, uint64(30 days));
         tipping.initialize(currencyManager.token());
         agent.initialize();
 
