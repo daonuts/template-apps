@@ -1,23 +1,6 @@
 {
   "abi": [
     {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": false,
-          "name": "appProxy",
-          "type": "address"
-        },
-        {
-          "indexed": false,
-          "name": "appId",
-          "type": "bytes32"
-        }
-      ],
-      "name": "InstalledApp",
-      "type": "event"
-    },
-    {
       "constant": false,
       "inputs": [
         {
@@ -43,6 +26,24 @@
         {
           "name": "challenge",
           "type": "address"
+        }
+      ],
+      "name": "installSetA",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "dao",
+          "type": "address"
+        },
+        {
+          "name": "currencyManager",
+          "type": "address"
         },
         {
           "name": "harberger",
@@ -61,7 +62,7 @@
           "type": "address"
         }
       ],
-      "name": "install",
+      "name": "installSetB",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",

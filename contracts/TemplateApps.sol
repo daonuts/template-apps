@@ -22,17 +22,9 @@ contract TemplateApps {
     bytes32 constant MINT_ROLE = keccak256("MINT_ROLE");
     bytes32 constant BURN_ROLE = keccak256("BURN_ROLE");
 
-    bytes32 airdropDuoAppId;
-    bytes32 challengeAppId;
-    bytes32 subscribeAppId;
-    bytes32 tippingAppId;
-
-    event InstalledApp(address appProxy, bytes32 appId);
-
-    function install(
+    function installSetA(
         Kernel dao, CappedVoting voting, TokenManager contribManager,
-        TokenManager currencyManager, AirdropDuo airdrop, Challenge challenge,
-        Harberger harberger, Subscribe subscribe, Tipping tipping, Agent agent
+        TokenManager currencyManager, AirdropDuo airdrop, Challenge challenge
     ) public {
         ACL acl = ACL(dao.acl());
 
@@ -44,35 +36,50 @@ contract TemplateApps {
           currencyManager, 100*TOKEN_UNIT, 10*TOKEN_UNIT, 50*TOKEN_UNIT,
           uint64(1 minutes), uint64(1 minutes), uint64(1 minutes)
         );
+
+        acl.createPermission(airdrop, contribManager, MINT_ROLE, msg.sender);
+
+        acl.createPermission(airdrop, currencyManager, MINT_ROLE, this);
+        acl.grantPermission(challenge, currencyManager, MINT_ROLE);
+        acl.setPermissionManager(msg.sender, currencyManager, MINT_ROLE);
+
+        acl.createPermission(challenge, currencyManager, BURN_ROLE, this);
+
+        acl.createPermission(contribManager, voting, voting.CREATE_VOTES_ROLE(), msg.sender);
+        acl.createPermission(msg.sender, voting, voting.MODIFY_SUPPORT_ROLE(), msg.sender);
+        acl.createPermission(msg.sender, voting, voting.MODIFY_QUORUM_ROLE(), msg.sender);
+
+        acl.createPermission(challenge, airdrop, airdrop.START_ROLE(), msg.sender);
+        acl.createPermission(msg.sender, challenge, challenge.PROPOSE_ROLE(), msg.sender);
+        acl.createPermission(contribManager, challenge, challenge.CHALLENGE_ROLE(), msg.sender);
+        acl.createPermission(voting, challenge, challenge.SUPPORT_ROLE(), msg.sender);
+    }
+
+    function installSetB(
+        Kernel dao, TokenManager currencyManager, Harberger harberger, Subscribe subscribe, Tipping tipping, Agent agent
+    ) public {
+        ACL acl = ACL(dao.acl());
+
         harberger.initialize(currencyManager);
         subscribe.initialize(currencyManager, 5000*TOKEN_UNIT, uint64(30 days));
         tipping.initialize(currencyManager.token());
         agent.initialize();
 
-        acl.createPermission(ANY_ENTITY, harberger, harberger.PURCHASE_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, harberger, MINT_ROLE, msg.sender);
-        acl.createPermission(ANY_ENTITY, harberger, BURN_ROLE, msg.sender);
-        acl.createPermission(ANY_ENTITY, harberger, harberger.MODIFY_ROLE(), msg.sender);
-
-        acl.createPermission(ANY_ENTITY, contribManager, MINT_ROLE, msg.sender);
-
-        acl.createPermission(ANY_ENTITY, currencyManager, MINT_ROLE, this);
-        acl.grantPermission(airdrop, currencyManager, MINT_ROLE);
-        acl.grantPermission(challenge, currencyManager, MINT_ROLE);
-
-        acl.createPermission(airdrop, currencyManager, BURN_ROLE, this);
-        acl.grantPermission(challenge, currencyManager, BURN_ROLE);
+        // 'this' is already currencyManager.BURN_ROLE() manager from installSetA
         acl.grantPermission(harberger, currencyManager, BURN_ROLE);
         acl.grantPermission(subscribe, currencyManager, BURN_ROLE);
+        acl.setPermissionManager(msg.sender, currencyManager, BURN_ROLE);
 
-        acl.createPermission(ANY_ENTITY, voting, voting.CREATE_VOTES_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, airdrop, airdrop.START_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, challenge, challenge.PROPOSE_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, challenge, challenge.CHALLENGE_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, challenge, challenge.SUPPORT_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, subscribe, subscribe.SET_PRICE_ROLE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, tipping, tipping.NONE(), msg.sender);
-        acl.createPermission(ANY_ENTITY, agent, agent.EXECUTE_ROLE(), msg.sender);
+        acl.createPermission(ANY_ENTITY, harberger, harberger.PURCHASE_ROLE(), msg.sender);
+        acl.createPermission(msg.sender, harberger, MINT_ROLE, msg.sender);
+        acl.createPermission(msg.sender, harberger, BURN_ROLE, msg.sender);
+        acl.createPermission(msg.sender, harberger, harberger.MODIFY_ROLE(), msg.sender);
+
+        acl.createPermission(msg.sender, subscribe, subscribe.SET_PRICE_ROLE(), msg.sender);
+        acl.createPermission(msg.sender, subscribe, subscribe.SET_DURATION_ROLE(), msg.sender);
+
+        acl.createPermission(0x0, tipping, 0x0, 0x0);
+        acl.createPermission(msg.sender, agent, agent.EXECUTE_ROLE(), msg.sender);
     }
 
 }
