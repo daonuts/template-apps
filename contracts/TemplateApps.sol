@@ -31,10 +31,10 @@ contract TemplateApps {
         Token contrib = Token(contribManager.token());
         Token currency = Token(currencyManager.token());
 
-        voting.initialize(contrib, currency, uint64(60 * 10**16), uint64(15 * 10**16), uint64(1 days));
+        voting.initialize(contrib, currency, uint64(50 * 10**16), uint64(10 * 10**16), uint64(7 days));
         challenge.initialize(
-          currencyManager, 100*TOKEN_UNIT, 10*TOKEN_UNIT, 50*TOKEN_UNIT,
-          uint64(1 minutes), uint64(1 minutes), uint64(1 minutes)
+          currencyManager, 200000*TOKEN_UNIT, 10000*TOKEN_UNIT, 80000*TOKEN_UNIT,
+          uint64(7 days), uint64(14 days), uint64(30 minutes)
         );
 
         acl.createPermission(airdrop, contribManager, MINT_ROLE, msg.sender);
